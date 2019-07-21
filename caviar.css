@@ -1,5 +1,17 @@
-/* Font */
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,600,700,800&display=swap');
+/* Font Settings */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i&display=swap');
+
+a,p,b,strong,h1,h2,h3,h4,h5,dfn{
+	font-family: 'Lato', sans-serif;
+}
+
+b,strong,h1,h2,h3,h4,h5{
+	font-weight: bold;
+}
+
+dfn{
+	font-style: italic;
+}
 
 /* Defaults */
 body{
@@ -8,14 +20,9 @@ body{
 }
 
 h1,h2,h3,h4,h5{
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
 	padding: 0px;
 }
 
-a,p{
-	font-family: 'Lato', sans-serif;
-}
 
 /* Hyperlinks */
 a{
@@ -33,4 +40,3 @@ a:visited{
 a,a:hover,a:visited,a:active{
 	text-decoration: none;
 }
-
