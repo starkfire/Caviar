@@ -23,7 +23,6 @@ h1,h2,h3,h4,h5{
 	padding: 0px;
 }
 
-
 /* Hyperlinks */
 a{
 	color: #055dab;
@@ -45,19 +44,23 @@ a,a:hover,a:visited,a:active{
 .avatar{
 	border-radius: 50% 50% 50% 50%;
 }
+
 .avatar.tiny{
 	height: 45px;
 	width: 45px;
 }
+
 .avatar.small{
-	height: 175px;
-	width: 175px;
+	height: 135px;
+	width: 135px;
 }
-.avatar.medium{
-	height: 225px;
-	width: 225px;
-}
+
 .avatar.big{
+	height: 190px;
+	width: 190px;
+}
+
+.avatar.huge{
 	height: 300px;
 	width: 300px;
 }
