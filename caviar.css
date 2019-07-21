@@ -40,3 +40,24 @@ a:visited{
 a,a:hover,a:visited,a:active{
 	text-decoration: none;
 }
+
+/* Avatar */
+.avatar{
+	border-radius: 50% 50% 50% 50%;
+}
+.avatar.tiny{
+	height: 45px;
+	width: 45px;
+}
+.avatar.small{
+	height: 175px;
+	width: 175px;
+}
+.avatar.medium{
+	height: 225px;
+	width: 225px;
+}
+.avatar.big{
+	height: 300px;
+	width: 300px;
+}
