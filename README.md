@@ -1,7 +1,3 @@
-<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
-<center>
-    <img src="caviar-banner.png">
-    <h2 style="font-family: 'Pacifico', cursive; font-size: 54px; margin-bottom: 0px;">Caviar</h2>
-    <h3 style="font-family: 'Open Sans'">A Front-End Framework for <b>The Red Wheelbarrow</b></h3>
-</center>
+<p align="center"><img src="caviar-banner.png"></p>
+<h1 align="center">Caviar</h1>
+<h3 align="center">A Front-End Microframework for <b>The Red Wheelbarrow</b></h3>
