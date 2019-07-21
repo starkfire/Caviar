@@ -7,14 +7,30 @@ body{
 	padding: 0px;
 }
 
-/* Headers */
 h1,h2,h3,h4,h5{
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	padding: 0px;
 }
 
+a,p{
+	font-family: 'Lato', sans-serif;
+}
+
 /* Hyperlinks */
 a{
+	color: #055dab;
+}
+
+a:hover, a:active{
+	color: #46a1f2;
+}
+
+a:visited{
+	color: #000000;
+}
+
+a,a:hover,a:visited,a:active{
 	text-decoration: none;
 }
+
