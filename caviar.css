@@ -25,6 +25,7 @@ body{
 
 h1,h2,h3,h4,h5{
 	padding: 0px;
+	margin: 0px;
 }
 
 /* Hyperlinks */
@@ -44,9 +45,14 @@ a,a:hover,a:visited,a:active{
 	text-decoration: none;
 }
 
+/* Paragraph */
+p{
+	margin: 0px;
+}
+
 /* Avatar */
 .avatar{
-	border-radius: 50% 50% 50% 50%;
+	border-radius: 50%;
 }
 
 .avatar.tiny{
