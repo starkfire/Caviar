@@ -51,26 +51,22 @@ p{
 }
 
 /* Avatar */
-.avatar{
+.avatar.rounded{
+	border-radius: 5%;
+}
+.avatar.circular{
 	border-radius: 50%;
 }
 
 .avatar.tiny{
-	height: 45px;
 	width: 45px;
 }
-
 .avatar.small{
-	height: 135px;
 	width: 135px;
 }
-
 .avatar.big{
-	height: 190px;
 	width: 190px;
 }
-
 .avatar.huge{
-	height: 300px;
-	width: 300px;
+	width: 295px;
 }
