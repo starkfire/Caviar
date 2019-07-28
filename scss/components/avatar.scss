@@ -1,0 +1,23 @@
+.avatar.rounded{
+	border-radius: 5%;
+}
+
+.avatar.circular{
+	border-radius: 50%;
+}
+
+.avatar.tiny{
+	width: $avatar-tiny-width;
+}
+
+.avatar.small{
+	width: $avatar-small-width;
+}
+
+.avatar.big{
+	width: $avatar-big-width;
+}
+
+.avatar.huge{
+	width: $avatar-huge-width;
+}
