@@ -1,0 +1,37 @@
+%active-link{
+	color: $a-activated-color;
+	text-decoration: none;
+}
+
+%inactive-link{
+	color: $a-inactive-color;
+	text-decoration: none;
+}
+
+b,strong,h1,h2,h3,h4,h5,h6,dfn,sub,sup,a,p{
+	font-family: $font-main;
+}
+
+b,strong,h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+
+dfn{
+	font-style: italic;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover, a:active{
+	@extend %active-link;
+}
+
+a:visited{
+	@extend %inactive-link;
+}
+
+p{
+	margin: 0;
+}
