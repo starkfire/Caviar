@@ -1,11 +1,8 @@
 {
   "name": "caviar",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "<p align=\"center\"><img src=\"caviar-banner.png\"></p>\r <h1 align=\"center\">Caviar</h1>\r <h3 align=\"center\">A Front-End Microframework for <b>The Red Wheelbarrow</b></h3>",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +16,9 @@
     "url": "https://github.com/starkfire/Caviar/issues"
   },
   "homepage": "https://github.com/starkfire/Caviar#readme",
-  "dependencies": {
-    "sass": "^1.22.7"
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
   }
 }
