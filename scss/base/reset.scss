@@ -1,0 +1,56 @@
+/*! minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
+
+%zero-mp{
+	margin: 0;
+	padding: 0;
+}
+
+body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre{
+	@extend %zero-mp;
+}
+
+html{
+	@extend %zero-mp;
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+	@extend %zero-mp;
+	font-weight: normal;
+}
+
+ul{
+	list-style: none;
+}
+
+button,input,select,textarea{
+	margin: 0;
+}
+
+*,*:before,*:after{
+	box-sizing: inherit;
+}
+
+img,video{
+	height: auto;
+	max-width: 100%;
+}
+
+iframe{
+	@extend %zero-mp;
+	border: 0;
+}
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,th{
+	padding: 0;
+	text-align: left;
+}
+
+hr{
+	@extend %zero-mp;
+}
