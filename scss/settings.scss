@@ -1,6 +1,7 @@
 // Fonts
-$font-main: 'Lato', sans-serif;
-$font-main-url: 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i&display=swap';
+$font-main: 'Source Sans Pro', sans-serif;
+$font-main-url: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap';
+//$font-main-url: 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap';
 
 // Color
 $red-main: #ff4646;
@@ -13,14 +14,12 @@ $brown-main: #c6a477;
 $purple-main: #ca34ca;
 $dark-main: #555555;
 
-$default-color: #dbdbdb;
-
 // Links
 $a-default-color: #055dab;
 $a-activated-color: #46a1f2;		// hover and active
 $a-inactive-color: #000000;			// visited
 
-// Avatar
+/* Avatar */
 $avatar-tiny-width: 45px;
 $avatar-small-width: 135px;
 $avatar-big-width: 190px;
