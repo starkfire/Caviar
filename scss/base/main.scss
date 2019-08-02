@@ -8,8 +8,12 @@
 	text-decoration: none;
 }
 
-*{
-	font-family: $font-main;
+/* 
+	Default Settings 
+*/
+
+* {	
+	font-family: $font-main; 
 }
 
 b,strong,h1,h2,h3,h4,h5,h6,dfn,sub,sup,a,p{
@@ -38,4 +42,44 @@ a:visited{
 
 p{
 	margin: 0;
+}
+
+/*
+	Placeholders: Color Setting
+*/
+
+%setcolor-red{
+	color: $red-main;
+}
+
+%setcolor-green{
+	color: $green-main;
+}
+
+%setcolor-blue{
+	color: $blue-main;
+}
+
+%setcolor-teal{
+	color: $teal-main;
+}
+
+%setcolor-orange{
+	color: $orange-main;
+}
+
+%setcolor-yellow{
+	color: $yellow-main;
+}
+
+%setcolor-brown{
+	color: $brown-main;
+}
+
+%setcolor-purple{
+	color: $purple-main;
+}
+
+%setcolor-dark{
+	color: $dark-main;
 }
