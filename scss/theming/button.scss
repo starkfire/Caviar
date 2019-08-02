@@ -1,5 +1,20 @@
 /* Default Value */
 $default-btn-rm: 0.25em;
+/* Font Size */
+$default-btn-tiny-fs: 14px;
+$default-btn-small-fs: 16px;
+$default-btn-big-fs: 24px;
+$default-btn-large-fs: 28px;
+/* Padding */
+// vp (vertical padding), hp (horizontal padding)
+$btn-tiny-vp: 1em*0.55;
+$btn-tiny-hp: 1em + (1em*0.55);
+$btn-small-vp: 1em*0.6;
+$btn-small-hp: 1em + (1em*0.6);
+$btn-big-vp: 1em*0.67;
+$btn-big-hp: 1em + (1em*0.67);
+$btn-large-vp: 1em*0.75;
+$btn-large-hp: 1em + (1em*0.75);
 
 button.cv-btn{
 	cursor: pointer;
@@ -10,4 +25,30 @@ button.cv-btn{
 	text-transform: none;
 	font-style: normal;
 	font-weight: normal;
+
+	/*
+		Basic Button
+	*/
+	&.basic{
+		border: 1px solid #dbdbdb;
+		background: transparent none;
+		border-radius: 0.28rem;
+
+		&.tiny{
+			padding: { top: $btn-tiny-vp; right: $btn-tiny-hp; bottom: $btn-tiny-vp; left: $btn-tiny-hp; }
+			font-size: $default-btn-tiny-fs;
+		}
+		&.small{
+			padding: { top: $btn-small-vp; right: $btn-small-hp; bottom: $btn-small-vp; left: $btn-small-hp; }
+			font-size: $default-btn-small-fs;
+		}
+		&.big{
+			padding: { top: $btn-big-vp; right: $btn-big-hp; bottom: $btn-big-vp; left: $btn-big-hp; }
+			font-size: $default-btn-big-fs;
+		}
+		&.large{
+			padding: { top: $btn-large-vp; right: $btn-large-hp; bottom: $btn-large-vp; left: $btn-large-hp; }
+			font-size: $default-btn-large-fs;			
+		}
+	}
 }
