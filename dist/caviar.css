@@ -41,9 +41,15 @@ a:visited {
   color: #000000;
   text-decoration: none; }
 
-b, strong, h1, h2, h3, h4, h5, h6, dfn, sub, sup, a, p {
+/* 
+	Default Settings 
+*/
+* {
   font-family: "Lato", sans-serif; }
 
+/*b,strong,h1,h2,h3,h4,h5,h6,dfn,sub,sup,a,p{
+	font-family: $font-main;
+}*/
 b, strong, h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
@@ -56,12 +62,17 @@ a {
 p {
   margin: 0; }
 
+/*
+	Placeholders: Color Setting
+*/
+/* Type */
 .avatar.rounded {
   border-radius: 5%; }
 
 .avatar.circular {
   border-radius: 50%; }
 
+/* Size */
 .avatar.tiny {
   width: 45px; }
 
