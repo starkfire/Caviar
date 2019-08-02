@@ -50,5 +50,16 @@ button.cv-btn{
 			padding: { top: $btn-large-vp; right: $btn-large-hp; bottom: $btn-large-vp; left: $btn-large-hp; }
 			font-size: $default-btn-large-fs;			
 		}
+
+		// Color Theme
+		&.red		{ border: 1px solid $red-main }
+		&.green 	{ border: 1px solid $green-main }
+		&.blue 		{ border: 1px solid $blue-main }
+		&.teal 		{ border: 1px solid $teal-main }
+		&.orange	{ border: 1px solid $orange-main }
+		&.yellow	{ border: 1px solid $yellow-main }
+		&.brown		{ border: 1px solid $brown-main }
+		&.purple 	{ border: 1px solid $purple-main }
+		&.dark		{ border: 1px solid $dark-main }
 	}
 }
