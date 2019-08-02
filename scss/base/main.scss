@@ -30,14 +30,14 @@ dfn{
 
 a{
 	text-decoration: none;
-}
+	
+	&:hover, &:active{
+		@extend %active-link;
+	}
 
-a:hover, a:active{
-	@extend %active-link;
-}
-
-a:visited{
-	@extend %inactive-link;
+	&:visited{
+		@extend %inactive-link;
+	}
 }
 
 p{
