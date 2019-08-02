@@ -1,9 +1,8 @@
-/* Type */
-.avatar.rounded		{ border-radius: 5% }
-.avatar.circular	{ border-radius: 50%; }
-
-/* Size */
-.avatar.tiny		{ width: $avatar-tiny-width; }
-.avatar.small		{ width: $avatar-small-width; }
-.avatar.big 		{ width: $avatar-big-width; }
-.avatar.huge		{ width: $avatar-huge-width; }
+.avatar{
+	&.rounded	{ border-radius: 5%; }
+	&.circular	{ border-radius: 50%; }
+	&.tiny		{ width: $avatar-tiny-width; }
+	&.small		{ width: $avatar-small-width; }
+	&.big 		{ width: $avatar-big-width; }
+	&.huge		{ width: $avatar-huge-width; }
+}
