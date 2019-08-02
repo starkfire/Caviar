@@ -1,0 +1,13 @@
+/* Default Value */
+$default-btn-rm: 0.25em;
+
+button.cv-btn{
+	cursor: pointer;
+	margin: 0em $default-btn-rm 0em 0em;
+	display: inline-block;
+	min-height: 1em;
+	text-align: center;
+	text-transform: none;
+	font-style: normal;
+	font-weight: normal;
+}
