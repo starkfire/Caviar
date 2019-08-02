@@ -26,6 +26,8 @@ button.cv-btn{
 	font-style: normal;
 	font-weight: normal;
 
+	&:last-child{ margin: 0em; }
+
 	/*
 		Basic Button
 	*/
