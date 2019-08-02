@@ -13,12 +13,12 @@
 */
 
 * {	
-	font-family: $font-main; 
+	font-family: $font-main !default; 
 }
 
-b,strong,h1,h2,h3,h4,h5,h6,dfn,sub,sup,a,p{
+/*b,strong,h1,h2,h3,h4,h5,h6,dfn,sub,sup,a,p{
 	font-family: $font-main;
-}
+}*/
 
 b,strong,h1,h2,h3,h4,h5,h6{
 	font-weight: bold;
@@ -30,14 +30,8 @@ dfn{
 
 a{
 	text-decoration: none;
-	
-	&:hover, &:active{
-		@extend %active-link;
-	}
-
-	&:visited{
-		@extend %inactive-link;
-	}
+	&:hover, &:active	{ @extend %active-link; }
+	&:visited			{ @extend %inactive-link; }
 }
 
 p{
