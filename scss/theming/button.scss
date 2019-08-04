@@ -35,12 +35,14 @@ $btn-basic-border: 1px;
 @mixin btn-default-styles($btn-border){
 	cursor: pointer;
 	margin: 0em $default-btn-rm 0em 0em;
+	position: relative;
 	display: inline-block;
 	min-height: 1em;
 	text-align: center;
 	text-transform: none;
 	font-style: normal;
 	font-weight: normal;
+	text-shadow: none;
 	border: $btn-border solid #dbdbdb;
 	border-radius: 0.28rem;
 
