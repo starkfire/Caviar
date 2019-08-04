@@ -17,7 +17,7 @@ $btn-large-vp: 1em*0.67;
 $btn-large-hp: 1em + (1em*0.67);
 /* Border */
 $btn-default-border: 2px;
-$btn-basic-border: 1px;
+$btn-basic-border: 1.35px;
 
 // default size if .cv-btn is called without any size reference (.tiny/.small/.big/.large)
 %cv-btn-default-size{
@@ -38,6 +38,7 @@ $btn-basic-border: 1px;
 		transition-duration: 0.3s;
 	}
 }
+
 // colored button
 @mixin colored-btn-color($picked-color){
 	border-color: $picked-color;
@@ -54,6 +55,7 @@ $btn-basic-border: 1px;
 	min-height: 1em;
 	text-align: center;
 	text-transform: none;
+	text-decoration: none;
 	font-style: normal;
 	font-weight: normal;
 	text-shadow: none;
@@ -131,6 +133,11 @@ button.cv-btn{
 button.cv-btn-basic{
 	@include btn-default-styles($btn-basic-border);
 	background: transparent none !important;
+
+	&:hover{
+		filter: brightness(80%);
+		transition-duration: 0.5s;
+	}
 
 	/* Color */
 	&.red{ border-color: $red-main; }
