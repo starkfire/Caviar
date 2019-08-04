@@ -63,22 +63,31 @@ button.cv-btn{
 		font-size: $default-btn-large-fs;			
 	}
 
+	&.red		{ border-color: $red-main; &:hover{ background-color: $red-main; color: white; }}
+	&.green 	{ border-color: $green-main; &:hover{ background-color: $green-main; color: white; }}
+	&.blue 		{ border-color: $blue-main; &:hover{ background-color: $blue-main; color: white; } }
+	&.teal 		{ border-color: $teal-main; &:hover{ background-color: $teal-main; color: white; } }
+	&.orange	{ border-color: $orange-main; &:hover{ background-color: $orange-main; color: white; } }
+	&.yellow	{ border-color: $yellow-main; &:hover{ background-color: $yellow-main; color: white; } }
+	&.brown		{ border-color: $brown-main; &:hover{ background-color: $brown-main; color: white; } }
+	&.purple 	{ border-color: $purple-main; &:hover{ background-color: $purple-main; color: white; } }
+	&.dark		{ border-color: $dark-main; &:hover{ background-color: $dark-main; color: white; } }
+
 	/*
 		Basic Button
 	*/
 	&.basic{
 		border: $cv-btn-basic-border solid #dbdbdb;
 		@extend %cv-btn-default-style;
-
 		// Color Theme
-		&.red		{ border: 1px solid $red-main }
-		&.green 	{ border: 1px solid $green-main }
-		&.blue 		{ border: 1px solid $blue-main }
-		&.teal 		{ border: 1px solid $teal-main }
-		&.orange	{ border: 1px solid $orange-main }
-		&.yellow	{ border: 1px solid $yellow-main }
-		&.brown		{ border: 1px solid $brown-main }
-		&.purple 	{ border: 1px solid $purple-main }
-		&.dark		{ border: 1px solid $dark-main }
+		&.red		{ border-color: $red-main }
+		&.green 	{ border-color: $green-main }
+		&.blue 		{ border-color: $blue-main }
+		&.teal 		{ border-color: $teal-main }
+		&.orange	{ border-color: $orange-main }
+		&.yellow	{ border-color: $yellow-main }
+		&.brown		{ border-color: $brown-main }
+		&.purple 	{ border-color: $purple-main }
+		&.dark		{ border-color: $dark-main }
 	}
 }
