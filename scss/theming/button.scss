@@ -1,3 +1,5 @@
+/* Default */
+$btn-default-color: #dbdbdb;
 /* Right Margin */
 $default-btn-rm: 0.25em;
 /* Font Size */
@@ -19,7 +21,7 @@ $btn-large-hp: 1em + (1em*0.67);
 $btn-default-border: 2px;
 $btn-basic-border: 1.35px;
 
-// default size if .cv-btn is called without any size reference (.tiny/.small/.big/.large)
+// set default size if .cv-btn is called without any size reference (.tiny/.small/.big/.large)
 %cv-btn-default-size{
 	padding: { top: $btn-tiny-vp; right: $btn-tiny-hp; bottom: $btn-tiny-vp; left: $btn-tiny-hp; }
 	font-size: $default-btn-tiny-fs;
@@ -38,16 +40,31 @@ $btn-basic-border: 1.35px;
 		transition-duration: 0.3s;
 	}
 }
-
+// basic button
+@mixin basic-btn-color($picked-color){
+	border-color: $picked-color;
+	&:hover{
+		$cv-btn-basic-darken: darken($picked-color, 20%);
+		border-color: $cv-btn-basic-darken;
+		transition-duration: 0.5s;
+	}
+}
 // colored button
-@mixin colored-btn-color($picked-color){
+@mixin filled-btn-color($picked-color){
 	border-color: $picked-color;
 	background-color: $picked-color;
 	color: white;
+	&:hover{
+		$cv-btn-filled-darken: darken($picked-color, 10%);
+		background-color: $cv-btn-filled-darken;
+		transition-duration: 0.5s;
+	}
 }
 
-// button ui boilerplate
-@mixin btn-default-styles($btn-border){
+/*
+	Main Button
+*/
+@mixin btn-default-styles($btn-border, $default-color){
 	cursor: pointer;
 	margin: 0em $default-btn-rm 0em 0em;
 	position: relative;
@@ -59,7 +76,7 @@ $btn-basic-border: 1.35px;
 	font-style: normal;
 	font-weight: normal;
 	text-shadow: none;
-	border: $btn-border solid #dbdbdb;
+	border: $btn-border solid $default-color;
 	border-radius: 0.28rem;
 
 	&:last-child{ margin: 0em; }
@@ -87,8 +104,10 @@ $btn-basic-border: 1.35px;
 	}
 }
 
+/*
+	Size 
+*/
 button{
-	/* Size */
 	@extend %cv-btn-default-size;
 
 	&.tiny{
@@ -112,7 +131,7 @@ button{
 	Default Button
 */
 button.cv-btn{
-	@include btn-default-styles($btn-default-border);
+	@include btn-default-styles($btn-default-border, $btn-default-color);
 	background: transparent none;
 
 	/* Color */
@@ -131,40 +150,47 @@ button.cv-btn{
 	Basic Button
 */
 button.cv-btn-basic{
-	@include btn-default-styles($btn-basic-border);
+	@include btn-default-styles($btn-basic-border, $btn-default-color);
 	background: transparent none !important;
 
 	&:hover{
-		filter: brightness(80%);
+		$cv-btn-basic-darken: darken($btn-default-color, 20%);
+		border-color: $cv-btn-basic-darken;
 		transition-duration: 0.5s;
 	}
 
 	/* Color */
-	&.red{ border-color: $red-main; }
-	&.green{ border-color: $green-main; }
-	&.blue{ border-color: $blue-main; }
-	&.teal{ border-color: $teal-main; }
-	&.orange{ border-color: $orange-main; }
-	&.yellow{ border-color: $yellow-main; }
-	&.brown{ border-color: $brown-main; }
-	&.purple{ border-color: $purple-main; }
-	&.dark{ border-color: $dark-main; }
+	&.red{ @include basic-btn-color($red-main); }
+	&.green{ @include basic-btn-color($green-main); }
+	&.blue{ @include basic-btn-color($blue-main); }
+	&.teal{ @include basic-btn-color($teal-main); }
+	&.orange{ @include basic-btn-color($orange-main); }
+	&.yellow{ @include basic-btn-color($yellow-main); }
+	&.brown{ @include basic-btn-color($brown-main); }
+	&.purple{ @include basic-btn-color($purple-main); }
+	&.dark{ @include basic-btn-color($dark-main); }
 }
 
 /*
-	Colored Button (unlike the default button, background-color does not change on hover)
+	Filled Button
 */
-button.cv-btn-colored{
-	@include btn-default-styles($btn-basic-border);
+button.cv-btn-filled{
+	@include btn-default-styles($btn-basic-border, $btn-default-color);
+
+	&:hover{
+		$cv-btn-filled-darken: darken($btn-default-color, 10%);
+		background-color: $cv-btn-filled-darken;
+		transition-duration: 0.5s;
+	}
 
 	/* Color */
-	&.red{ @include colored-btn-color($red-main); }
-	&.green{ @include colored-btn-color($green-main); }
-	&.blue{ @include colored-btn-color($blue-main); }
-	&.teal{ @include colored-btn-color($teal-main); }
-	&.orange{ @include colored-btn-color($orange-main); }
-	&.yellow{ @include colored-btn-color($yellow-main); }
-	&.brown{ @include colored-btn-color($brown-main); }
-	&.purple{ @include colored-btn-color($purple-main); }
-	&.dark{ @include colored-btn-color($dark-main); }
+	&.red{ @include filled-btn-color($red-main); }
+	&.green{ @include filled-btn-color($green-main); }
+	&.blue{ @include filled-btn-color($blue-main); }
+	&.teal{ @include filled-btn-color($teal-main); }
+	&.orange{ @include filled-btn-color($orange-main); }
+	&.yellow{ @include filled-btn-color($yellow-main); }
+	&.brown{ @include filled-btn-color($brown-main); }
+	&.purple{ @include filled-btn-color($purple-main); }
+	&.dark{ @include filled-btn-color($dark-main); }
 }
