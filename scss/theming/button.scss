@@ -194,3 +194,35 @@ button.cv-btn-filled{
 	&.purple{ @include filled-btn-color($purple-main); }
 	&.dark{ @include filled-btn-color($dark-main); }
 }
+
+/*
+	Grouped Buttons
+*/
+div.cv-btn-group{
+	position: relative;
+	vertical-align: middle;
+	display: inline-flex;
+
+	button.cv-btn-member{
+		@include btn-default-styles($btn-basic-border, $btn-default-color);
+		border-radius: 0;
+		margin: 0;
+
+		&:hover{
+			$cv-btn-filled-darken: darken($btn-default-color, 10%);
+			background-color: $cv-btn-filled-darken;
+			transition-duration: 0.5s;
+		}
+
+		/* Color */
+		&.red{ @include filled-btn-color($red-main); }
+		&.green{ @include filled-btn-color($green-main); }
+		&.blue{ @include filled-btn-color($blue-main); }
+		&.teal{ @include filled-btn-color($teal-main); }
+		&.orange{ @include filled-btn-color($orange-main); }
+		&.yellow{ @include filled-btn-color($yellow-main); }
+		&.brown{ @include filled-btn-color($brown-main); }
+		&.purple{ @include filled-btn-color($purple-main); }
+		&.dark{ @include filled-btn-color($dark-main); }
+	}
+}
