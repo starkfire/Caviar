@@ -70,6 +70,19 @@ $btn-basic-border: 1px;
 		-webkit-border-radius: 25px;
 		-moz-border-radius: 25px;
 	}
+	/* Expanding Mode */
+	&.expanding{
+		&:hover{
+			$exp: 1em*0.01;
+			padding: { 
+				top: $btn-big-vp+$exp; 
+				right: $btn-big-hp+$exp; 
+				bottom: $btn-big-vp+$exp; 
+				left: $btn-big-hp+$exp; 
+			}
+			transition-duration: 0.3s;
+		}
+	}
 }
 
 button{
