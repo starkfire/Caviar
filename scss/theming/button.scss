@@ -34,6 +34,23 @@ button.cv-btn{
 	&:last-child{ margin: 0em; }
 	&:focus{ outline: none !important; }
 
+	/* Size */
+	&.tiny{
+		@extend %cv-btn-default-size;
+	}
+	&.small{
+		padding: { top: $btn-small-vp; right: $btn-small-hp; bottom: $btn-small-vp; left: $btn-small-hp; }
+		font-size: $default-btn-small-fs;
+	}
+	&.big{
+		padding: { top: $btn-big-vp; right: $btn-big-hp; bottom: $btn-big-vp; left: $btn-big-hp; }
+		font-size: $default-btn-big-fs;
+	}
+	&.large{
+		padding: { top: $btn-large-vp; right: $btn-large-hp; bottom: $btn-large-vp; left: $btn-large-hp; }
+		font-size: $default-btn-large-fs;			
+	}
+
 	// inherit default button size
 	@extend %cv-btn-default-size;
 
@@ -44,22 +61,6 @@ button.cv-btn{
 		border: 1px solid #dbdbdb;
 		background: transparent none;
 		border-radius: 0.28rem;
-
-		&.tiny{
-			@extend %cv-btn-default-size;
-		}
-		&.small{
-			padding: { top: $btn-small-vp; right: $btn-small-hp; bottom: $btn-small-vp; left: $btn-small-hp; }
-			font-size: $default-btn-small-fs;
-		}
-		&.big{
-			padding: { top: $btn-big-vp; right: $btn-big-hp; bottom: $btn-big-vp; left: $btn-big-hp; }
-			font-size: $default-btn-big-fs;
-		}
-		&.large{
-			padding: { top: $btn-large-vp; right: $btn-large-hp; bottom: $btn-large-vp; left: $btn-large-hp; }
-			font-size: $default-btn-large-fs;			
-		}
 
 		// Color Theme
 		&.red		{ border: 1px solid $red-main }
