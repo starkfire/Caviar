@@ -88,16 +88,33 @@ p {
 /* Font Size */
 /* Padding */
 /* Border */
-button.cv-btn, button.cv-btn.basic {
-  background: transparent none;
-  border-radius: 0.28rem; }
-
-button.cv-btn, button.cv-btn.tiny {
+button, button.tiny {
   padding-top: 0.45em;
   padding-right: 1.45em;
   padding-bottom: 0.45em;
   padding-left: 1.45em;
   font-size: 14px; }
+
+button {
+  /* Size */ }
+  button.small {
+    padding-top: 0.55em;
+    padding-right: 1.55em;
+    padding-bottom: 0.55em;
+    padding-left: 1.55em;
+    font-size: 16px; }
+  button.big {
+    padding-top: 0.6em;
+    padding-right: 1.6em;
+    padding-bottom: 0.6em;
+    padding-left: 1.6em;
+    font-size: 24px; }
+  button.large {
+    padding-top: 0.67em;
+    padding-right: 1.67em;
+    padding-bottom: 0.67em;
+    padding-left: 1.67em;
+    font-size: 28px; }
 
 button.cv-btn {
   cursor: pointer;
@@ -109,94 +126,77 @@ button.cv-btn {
   font-style: normal;
   font-weight: normal;
   border: 2px solid #dbdbdb;
-  /* Size */
-  /*
-		Basic Button
-	*/ }
+  border-radius: 0.28rem;
+  background: transparent none;
+  /* Color */ }
   button.cv-btn:last-child {
     margin: 0em; }
   button.cv-btn:focus {
     outline: none !important; }
-  button.cv-btn.small {
-    padding-top: 0.55em;
-    padding-right: 1.55em;
-    padding-bottom: 0.55em;
-    padding-left: 1.55em;
-    font-size: 16px; }
-  button.cv-btn.big {
-    padding-top: 0.6em;
-    padding-right: 1.6em;
-    padding-bottom: 0.6em;
-    padding-left: 1.6em;
-    font-size: 24px; }
-  button.cv-btn.large {
-    padding-top: 0.67em;
-    padding-right: 1.67em;
-    padding-bottom: 0.67em;
-    padding-left: 1.67em;
-    font-size: 28px; }
   button.cv-btn.red {
     border-color: #ff4646; }
     button.cv-btn.red:hover {
-      background-color: #ff4646;
-      color: white; }
+      color: white;
+      background-color: #ff4646; }
   button.cv-btn.green {
     border-color: #73c088; }
     button.cv-btn.green:hover {
-      background-color: #73c088;
-      color: white; }
+      color: white;
+      background-color: #73c088; }
   button.cv-btn.blue {
     border-color: #54c0cc; }
     button.cv-btn.blue:hover {
-      background-color: #54c0cc;
-      color: white; }
+      color: white;
+      background-color: #54c0cc; }
   button.cv-btn.teal {
     border-color: #2fc4b2; }
     button.cv-btn.teal:hover {
-      background-color: #2fc4b2;
-      color: white; }
+      color: white;
+      background-color: #2fc4b2; }
   button.cv-btn.orange {
     border-color: #fe7235; }
     button.cv-btn.orange:hover {
-      background-color: #fe7235;
-      color: white; }
+      color: white;
+      background-color: #fe7235; }
   button.cv-btn.yellow {
     border-color: #fdd51e; }
     button.cv-btn.yellow:hover {
-      background-color: #fdd51e;
-      color: white; }
+      color: white;
+      background-color: #fdd51e; }
   button.cv-btn.brown {
     border-color: #c6a477; }
     button.cv-btn.brown:hover {
-      background-color: #c6a477;
-      color: white; }
+      color: white;
+      background-color: #c6a477; }
   button.cv-btn.purple {
     border-color: #ca34ca; }
     button.cv-btn.purple:hover {
-      background-color: #ca34ca;
-      color: white; }
+      color: white;
+      background-color: #ca34ca; }
   button.cv-btn.dark {
     border-color: #555555; }
     button.cv-btn.dark:hover {
-      background-color: #555555;
-      color: white; }
-  button.cv-btn.basic {
-    border: 1px solid #dbdbdb; }
-    button.cv-btn.basic.red {
-      border-color: #ff4646; }
-    button.cv-btn.basic.green {
-      border-color: #73c088; }
-    button.cv-btn.basic.blue {
-      border-color: #54c0cc; }
-    button.cv-btn.basic.teal {
-      border-color: #2fc4b2; }
-    button.cv-btn.basic.orange {
-      border-color: #fe7235; }
-    button.cv-btn.basic.yellow {
-      border-color: #fdd51e; }
-    button.cv-btn.basic.brown {
-      border-color: #c6a477; }
-    button.cv-btn.basic.purple {
-      border-color: #ca34ca; }
-    button.cv-btn.basic.dark {
-      border-color: #555555; }
+      color: white;
+      background-color: #555555; }
+
+/*
+	Basic Button
+*/
+button.cv-btn-basic {
+  cursor: pointer;
+  margin: 0em 0.25em 0em 0em;
+  display: inline-block;
+  min-height: 1em;
+  text-align: center;
+  text-transform: none;
+  font-style: normal;
+  font-weight: normal;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.28rem;
+  background: transparent none !important; }
+  button.cv-btn-basic:last-child {
+    margin: 0em; }
+  button.cv-btn-basic:focus {
+    outline: none !important; }
+  button.cv-btn-basic.red {
+    border-color: #ff4646; }
