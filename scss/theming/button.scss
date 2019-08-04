@@ -1,4 +1,4 @@
-/* Default Value */
+/* Right Margin */
 $default-btn-rm: 0.25em;
 /* Font Size */
 $default-btn-tiny-fs: 14px;
@@ -48,6 +48,11 @@ $btn-basic-border: 1px;
 
 	&:last-child{ margin: 0em; }
 	&:focus{ outline: none !important; }
+
+	/* Curved Mode */
+	&.curved{
+		border-radius: 25px;
+	}
 }
 
 button{
@@ -71,6 +76,9 @@ button{
 	}
 }
 
+/*
+	Default Button
+*/
 button.cv-btn{
 	@include btn-default-styles($btn-default-border);
 	background: transparent none;
