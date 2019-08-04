@@ -52,6 +52,9 @@ $btn-basic-border: 1px;
 	/* Curved Mode */
 	&.curved{
 		border-radius: 25px;
+		-ms-border-radius: 25px;
+		-webkit-border-radius: 25px;
+		-moz-border-radius: 25px;
 	}
 }
 
