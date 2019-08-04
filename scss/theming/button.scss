@@ -16,20 +16,23 @@ $btn-big-hp: 1em + (1em*0.6);
 $btn-large-vp: 1em*0.67;
 $btn-large-hp: 1em + (1em*0.67);
 /* Border */
-$cv-btn-default-border: 2px;
-$cv-btn-basic-border: 1px;
-
-%cv-btn-default-style{
-	background: transparent none;
-	border-radius: 0.28rem;
-}
+$btn-default-border: 2px;
+$btn-basic-border: 1px;
 
 %cv-btn-default-size{
 	padding: { top: $btn-tiny-vp; right: $btn-tiny-hp; bottom: $btn-tiny-vp; left: $btn-tiny-hp; }
 	font-size: $default-btn-tiny-fs;
 }
 
-button.cv-btn{
+@mixin default-btn-color($picked-color){
+	border-color: $picked-color;
+	&:hover{
+		color: white;
+		background-color: $picked-color;
+	}
+}
+
+@mixin btn-default-styles($btn-border){
 	cursor: pointer;
 	margin: 0em $default-btn-rm 0em 0em;
 	display: inline-block;
@@ -38,15 +41,17 @@ button.cv-btn{
 	text-transform: none;
 	font-style: normal;
 	font-weight: normal;
-	border: $cv-btn-default-border solid #dbdbdb;
+	border: $btn-border solid #dbdbdb;
+	border-radius: 0.28rem;
 
 	&:last-child{ margin: 0em; }
 	&:focus{ outline: none !important; }
+}
 
-	@extend %cv-btn-default-style;
+button{
+	/* Size */
 	@extend %cv-btn-default-size;
 
-	/* Size */
 	&.tiny{
 		@extend %cv-btn-default-size;
 	}
@@ -62,32 +67,30 @@ button.cv-btn{
 		padding: { top: $btn-large-vp; right: $btn-large-hp; bottom: $btn-large-vp; left: $btn-large-hp; }
 		font-size: $default-btn-large-fs;			
 	}
+}
 
-	&.red		{ border-color: $red-main; &:hover{ background-color: $red-main; color: white; }}
-	&.green 	{ border-color: $green-main; &:hover{ background-color: $green-main; color: white; }}
-	&.blue 		{ border-color: $blue-main; &:hover{ background-color: $blue-main; color: white; } }
-	&.teal 		{ border-color: $teal-main; &:hover{ background-color: $teal-main; color: white; } }
-	&.orange	{ border-color: $orange-main; &:hover{ background-color: $orange-main; color: white; } }
-	&.yellow	{ border-color: $yellow-main; &:hover{ background-color: $yellow-main; color: white; } }
-	&.brown		{ border-color: $brown-main; &:hover{ background-color: $brown-main; color: white; } }
-	&.purple 	{ border-color: $purple-main; &:hover{ background-color: $purple-main; color: white; } }
-	&.dark		{ border-color: $dark-main; &:hover{ background-color: $dark-main; color: white; } }
+button.cv-btn{
+	@include btn-default-styles($btn-default-border);
+	background: transparent none;
 
-	/*
-		Basic Button
-	*/
-	&.basic{
-		border: $cv-btn-basic-border solid #dbdbdb;
-		@extend %cv-btn-default-style;
-		// Color Theme
-		&.red		{ border-color: $red-main }
-		&.green 	{ border-color: $green-main }
-		&.blue 		{ border-color: $blue-main }
-		&.teal 		{ border-color: $teal-main }
-		&.orange	{ border-color: $orange-main }
-		&.yellow	{ border-color: $yellow-main }
-		&.brown		{ border-color: $brown-main }
-		&.purple 	{ border-color: $purple-main }
-		&.dark		{ border-color: $dark-main }
-	}
+	/* Color */
+	&.red{ @include default-btn-color($red-main); }
+	&.green{ @include default-btn-color($green-main); }
+	&.blue{ @include default-btn-color($blue-main); }
+	&.teal{ @include default-btn-color($teal-main); }
+	&.orange{ @include default-btn-color($orange-main); }
+	&.yellow{ @include default-btn-color($yellow-main); }
+	&.brown{ @include default-btn-color($brown-main); }
+	&.purple{ @include default-btn-color($purple-main); }
+	&.dark{ @include default-btn-color($dark-main); }
+}
+
+/*
+	Basic Button
+*/
+button.cv-btn-basic{
+	@include btn-default-styles($btn-basic-border);
+	background: transparent none !important;
+
+	&.red{ border-color: $red-main; }
 }
