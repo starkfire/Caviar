@@ -93,4 +93,12 @@ button.cv-btn-basic{
 	background: transparent none !important;
 
 	&.red{ border-color: $red-main; }
+	&.green{ border-color: $green-main; }
+	&.blue{ border-color: $blue-main; }
+	&.teal{ border-color: $teal-main; }
+	&.orange{ border-color: $orange-main; }
+	&.yellow{ border-color: $yellow-main; }
+	&.brown{ border-color: $brown-main; }
+	&.purple{ border-color: $purple-main; }
+	&.dark{ border-color: $dark-main; }
 }
