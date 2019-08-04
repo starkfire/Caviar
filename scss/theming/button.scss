@@ -19,19 +19,24 @@ $btn-large-hp: 1em + (1em*0.67);
 $btn-default-border: 2px;
 $btn-basic-border: 1px;
 
+// default size if .cv-btn is called without any size reference (.tiny/.small/.big/.large)
 %cv-btn-default-size{
 	padding: { top: $btn-tiny-vp; right: $btn-tiny-hp; bottom: $btn-tiny-vp; left: $btn-tiny-hp; }
 	font-size: $default-btn-tiny-fs;
 }
 
+// color theming
 @mixin default-btn-color($picked-color){
 	border-color: $picked-color;
 	&:hover{
+		// change button background on hover
 		color: white;
 		background-color: $picked-color;
+		transition-duration: 0.3s;
 	}
 }
 
+// button ui boilerplate
 @mixin btn-default-styles($btn-border){
 	cursor: pointer;
 	margin: 0em $default-btn-rm 0em 0em;
