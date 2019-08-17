@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var runSequence = require('gulp4-run-sequence');
+var stripCssComments = require('gulp-strip-css-comments');
 
 var scss_pre = 'scss/caviar.scss';
 var scss_post = 'src';
@@ -9,14 +10,14 @@ var scss_post = 'src';
 var scss_release = 'dist';
 
 // generate src/caviar.css
-gulp.task('sass', function(){
+gulp.task('src', function(){
 	return gulp.src(scss_pre)
 		.pipe(sass().on('error', console.error.bind(console)))
 		.pipe(gulp.dest(scss_post));
 });
 
 // generate src/caviar.min.css
-gulp.task('sass-minify', function(){
+gulp.task('src-minify', function(){
 	return gulp.src(scss_pre)
 		.pipe(sass({
 			errorLogToConsole: true,
@@ -26,6 +27,13 @@ gulp.task('sass-minify', function(){
 			suffix: '.min'
 		}))
 		.pipe(gulp.dest(scss_post))
+});
+
+// remove comments
+gulp.task('src-strip-comments', function(){
+	return gulp.src('src/*.css')
+		.pipe(stripCssComments({ preserve: false }))
+		.pipe(gulp.dest('src'));
 });
 
 // generate distributable
@@ -48,12 +56,19 @@ gulp.task('dist-minify', function(){
 		.pipe(gulp.dest(scss_release))
 });
 
+// remove comments
+gulp.task('dist-strip-comments', function(){
+	return gulp.src('dist/*.css')
+		.pipe(stripCssComments({ preserve: false }))
+		.pipe(gulp.dest('dist'));
+});
+
 // Build - Source
 gulp.task('default', function(callback){
-	runSequence(['sass', 'sass-minify'], callback);
+	runSequence(['src', 'src-minify', 'src-strip-comments'], callback);
 });
 
 // Build - Distributable
 gulp.task('build', function(callback){
-	runSequence(['dist', 'dist-minify'], callback);
+	runSequence(['dist', 'dist-minify', 'dist-strip-comments'], callback);
 });
