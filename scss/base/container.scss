@@ -1,17 +1,12 @@
-/* Defaults */
-$container-default-max-width: 1240px;
-/* Padding */
-// vp (vertical), hp (horizontal)
-$container-hp: 15px;
-
 .cv-container{
-	padding{
-		left: $container-hp;
-		right: $container-hp;
-	}
+	position: relative;
+	display: block;
+	box-sizing: content-box;
+	max-width: 100%;
 	margin{
 		left: auto;
 		right: auto;
+		top: 0; 
+		bottom: 0;
 	}
-	max-width: $container-default-max-width;
 }
