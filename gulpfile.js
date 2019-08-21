@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var runSequence = require('gulp4-run-sequence');
 var stripCssComments = require('gulp-strip-css-comments');
+var browserSync = require('browser-sync');
 
 var scss_pre = 'scss/caviar.scss';
 var scss_post = 'src';
@@ -13,7 +14,10 @@ var scss_release = 'dist';
 gulp.task('src', function(){
 	return gulp.src(scss_pre)
 		.pipe(sass().on('error', console.error.bind(console)))
-		.pipe(gulp.dest(scss_post));
+		.pipe(gulp.dest(scss_post))
+		.pipe(browserSync.reload({
+			stream: true
+		}));
 });
 
 // generate src/caviar.min.css
@@ -61,6 +65,21 @@ gulp.task('dist-strip-comments', function(){
 	return gulp.src('dist/*.css')
 		.pipe(stripCssComments({ preserve: false }))
 		.pipe(gulp.dest('dist'));
+});
+
+// browser sync
+gulp.task('browserSync', function(){
+	browserSync({
+		server: {
+			baseDir: 'Caviar'
+		}
+	});
+});
+
+// watch
+gulp.task('watch', function(){
+	gulp.watch('scss/**/*.scss', gulp.series('default'));
+	gulp.watch('dummy.html', gulp.series(browserSync.reload));
 });
 
 // Build - Source
