@@ -16,3 +16,12 @@ $desktop-default-width: 1366px;
 		bottom: 0;
 	}
 }
+
+@media only screen and (max-width: $mobile-default-width){
+	.cv-container{
+		padding: {
+			left: $cv-container-offset;
+			right: $cv-container-offset;
+		}
+	}
+}
