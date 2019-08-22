@@ -48,9 +48,6 @@ a:visited {
 * {
   font-family: "Source Sans Pro", sans-serif; }
 
-/*b,strong,h1,h2,h3,h4,h5,h6,dfn,sub,sup,a,p{
-	font-family: $font-main;
-}*/
 b, strong, h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
@@ -63,9 +60,31 @@ a {
 p {
   margin: 0; }
 
-/*
-	Placeholders: Color Setting
-*/
+.cv-container {
+  position: relative;
+  display: block;
+  box-sizing: content-box;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+@media only screen and (max-width: 414px) {
+  .cv-container {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media only screen and (min-width: 415px) and (max-width: 667px) {
+  .cv-container {
+    padding-left: 25px;
+    padding-right: 25px; } }
+
+@media only screen and (min-width: 668px) {
+  .cv-container {
+    padding-left: auto;
+    padding-right: auto; } }
+
 .cv-avatar.rounded {
   border-radius: 5%; }
 
