@@ -38,8 +38,8 @@ $desktop-default-width: 1366px;
 	}
 }
 
-// Tablet (Large)
-@media only screen and (min-width: $tablet-small-default-width+1 ) and (max-width: $tablet-large-default-width){
+// Tablet (Large) & Desktop
+@media only screen and (min-width: $tablet-small-default-width+1 ){
 	.cv-container{
 		padding: {
 			left: auto;
