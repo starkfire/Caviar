@@ -4,7 +4,10 @@
   "description": "<p align=\"center\"><img src=\"caviar-banner.png\"></p>\r <h1 align=\"center\">Caviar</h1>\r <h3 align=\"center\">A Front-End Microframework for <b>The Red Wheelbarrow</b></h3>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "gulp",
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
