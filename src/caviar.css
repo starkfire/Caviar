@@ -108,12 +108,25 @@ button, button.tiny {
   padding-left: 1.45em;
   font-size: 14px; }
 
+button.tiny.expanding:hover {
+  padding-top: 0.65em;
+  padding-bottom: 0.65em;
+  padding-right: 1.65em;
+  padding-left: 1.65em;
+  transition-duration: 0.3s; }
+
 button.small {
   padding-top: 0.55em;
   padding-right: 1.55em;
   padding-bottom: 0.55em;
   padding-left: 1.55em;
   font-size: 16px; }
+  button.small.expanding:hover {
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-right: 1.75em;
+    padding-left: 1.75em;
+    transition-duration: 0.3s; }
 
 button.big {
   padding-top: 0.6em;
@@ -121,6 +134,12 @@ button.big {
   padding-bottom: 0.6em;
   padding-left: 1.6em;
   font-size: 24px; }
+  button.big.expanding:hover {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-right: 1.8em;
+    padding-left: 1.8em;
+    transition-duration: 0.3s; }
 
 button.large {
   padding-top: 0.67em;
@@ -128,6 +147,12 @@ button.large {
   padding-bottom: 0.67em;
   padding-left: 1.67em;
   font-size: 28px; }
+  button.large.expanding:hover {
+    padding-top: 0.87em;
+    padding-bottom: 0.87em;
+    padding-right: 1.87em;
+    padding-left: 1.87em;
+    transition-duration: 0.3s; }
 
 button.cv-btn {
   cursor: pointer;
@@ -145,7 +170,7 @@ button.cv-btn {
   border-radius: 0.28rem;
   background: transparent none; }
   button.cv-btn:last-child {
-    margin: 0em; }
+    margin-right: 0em; }
   button.cv-btn:focus {
     outline: none !important; }
   button.cv-btn.curved {
@@ -153,12 +178,6 @@ button.cv-btn {
     -ms-border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px; }
-  button.cv-btn.expanding:hover {
-    padding-top: 0.61em;
-    padding-right: 1.61em;
-    padding-bottom: 0.61em;
-    padding-left: 1.61em;
-    transition-duration: 0.3s; }
   button.cv-btn.red {
     border-color: #d93843; }
     button.cv-btn.red:hover {
@@ -230,7 +249,7 @@ button.cv-btn-basic {
   border-radius: 0.28rem;
   background: transparent none !important; }
   button.cv-btn-basic:last-child {
-    margin: 0em; }
+    margin-right: 0em; }
   button.cv-btn-basic:focus {
     outline: none !important; }
   button.cv-btn-basic.curved {
@@ -238,12 +257,6 @@ button.cv-btn-basic {
     -ms-border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px; }
-  button.cv-btn-basic.expanding:hover {
-    padding-top: 0.61em;
-    padding-right: 1.61em;
-    padding-bottom: 0.61em;
-    padding-left: 1.61em;
-    transition-duration: 0.3s; }
   button.cv-btn-basic:hover {
     border-color: #a8a8a8;
     transition-duration: 0.5s; }
@@ -308,7 +321,7 @@ button.cv-btn-filled {
   border: 1.35px solid #dbdbdb;
   border-radius: 0.28rem; }
   button.cv-btn-filled:last-child {
-    margin: 0em; }
+    margin-right: 0em; }
   button.cv-btn-filled:focus {
     outline: none !important; }
   button.cv-btn-filled.curved {
@@ -316,12 +329,6 @@ button.cv-btn-filled {
     -ms-border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px; }
-  button.cv-btn-filled.expanding:hover {
-    padding-top: 0.61em;
-    padding-right: 1.61em;
-    padding-bottom: 0.61em;
-    padding-left: 1.61em;
-    transition-duration: 0.3s; }
   button.cv-btn-filled:hover {
     background-color: #c2c2c2;
     transition-duration: 0.5s; }
@@ -410,7 +417,7 @@ div.cv-btn-group {
     border-radius: 0;
     margin: 0; }
     div.cv-btn-group button.cv-btn-member:last-child {
-      margin: 0em; }
+      margin-right: 0em; }
     div.cv-btn-group button.cv-btn-member:focus {
       outline: none !important; }
     div.cv-btn-group button.cv-btn-member.curved {
@@ -418,12 +425,6 @@ div.cv-btn-group {
       -ms-border-radius: 25px;
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px; }
-    div.cv-btn-group button.cv-btn-member.expanding:hover {
-      padding-top: 0.61em;
-      padding-right: 1.61em;
-      padding-bottom: 0.61em;
-      padding-left: 1.61em;
-      transition-duration: 0.3s; }
     div.cv-btn-group button.cv-btn-member:hover {
       background-color: #c2c2c2;
       transition-duration: 0.5s; }
