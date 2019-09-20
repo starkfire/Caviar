@@ -25,8 +25,9 @@ $a-default-color: #055dab;
 $a-activated-color: #46a1f2;		// hover and active
 $a-inactive-color: #000000;			// visited
 
-/* Avatar */
-$avatar-tiny-width: 45px;
-$avatar-small-width: 135px;
-$avatar-big-width: 190px;
-$avatar-large-width: 295px;
+// Avatar
+$avatar-large-width: 20vw;
+$avatar-big-width: 15vw;
+$avatar-medium-width: 10vw;
+$avatar-small-width: 5vw;
+$avatar-tiny-width: 2.75vw;
