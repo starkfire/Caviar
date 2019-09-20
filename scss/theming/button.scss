@@ -25,6 +25,9 @@ $btn-default-border: 2px;
 $btn-basic-border: 1.35px;
 $btn-filled-border: 1.35px;
 
+// Expansion Rate
+$expand-rate: 1em*0.2;
+
 // set default size if .cv-btn is called without any size reference (.tiny/.small/.big/.large)
 %cv-btn-default-size{
 	padding: { top: $btn-tiny-vp; right: $btn-tiny-hp; bottom: $btn-tiny-vp; left: $btn-tiny-hp; }
@@ -95,21 +98,7 @@ $btn-filled-border: 1.35px;
 		-webkit-border-radius: 25px;
 		-moz-border-radius: 25px;
 	}
-	// Expanding Mode
-	&.expanding{
-		&:hover{
-			$exp: 1em*0.01;
-			padding: { 
-				top: $btn-big-vp+$exp; 
-				right: $btn-big-hp+$exp; 
-				bottom: $btn-big-vp+$exp; 
-				left: $btn-big-hp+$exp; 
-			}
-			transition-duration: 0.3s;
-		}
-	}
 }
-
 
 // Size
 button{
@@ -117,18 +106,55 @@ button{
 
 	&.tiny{
 		@extend %cv-btn-default-size;
+
+		&.expanding{
+			&:hover{
+				padding: {
+					top: $btn-tiny-vp+$expand-rate; bottom: $btn-tiny-vp+$expand-rate;
+					right: $btn-tiny-hp+$expand-rate; left: $btn-tiny-hp+$expand-rate;
+				}
+				transition-duration: 0.3s;
+			}
+		}
 	}
 	&.small{
 		padding: { top: $btn-small-vp; right: $btn-small-hp; bottom: $btn-small-vp; left: $btn-small-hp; }
 		font-size: $default-btn-small-fs;
+		&.expanding{
+			&:hover{
+				padding: {
+					top: $btn-small-vp+$expand-rate; bottom: $btn-small-vp+$expand-rate;
+					right: $btn-small-hp+$expand-rate; left: $btn-small-hp+$expand-rate;
+				}
+				transition-duration: 0.3s;
+			}
+		}
 	}
 	&.big{
 		padding: { top: $btn-big-vp; right: $btn-big-hp; bottom: $btn-big-vp; left: $btn-big-hp; }
 		font-size: $default-btn-big-fs;
+		&.expanding{
+			&:hover{
+				padding: {
+					top: $btn-big-vp+$expand-rate; bottom: $btn-big-vp+$expand-rate;
+					right: $btn-big-hp+$expand-rate; left: $btn-big-hp+$expand-rate;
+				}
+				transition-duration: 0.3s;
+			}
+		}
 	}
 	&.large{
 		padding: { top: $btn-large-vp; right: $btn-large-hp; bottom: $btn-large-vp; left: $btn-large-hp; }
-		font-size: $default-btn-large-fs;			
+		font-size: $default-btn-large-fs;
+		&.expanding{
+			&:hover{
+				padding: {
+					top: $btn-large-vp+$expand-rate; bottom: $btn-large-vp+$expand-rate;
+					right: $btn-large-hp+$expand-rate; left: $btn-large-hp+$expand-rate;
+				}
+				transition-duration: 0.3s;
+			}
+		}
 	}
 }
 
