@@ -81,8 +81,12 @@ $btn-filled-border: 1.35px;
 	border: $btn-border solid $default-color;
 	border-radius: 0.28rem;
 
-	&:last-child{ margin-right: 0em; }
-	&:focus{ outline: none !important; }
+	&:last-child{ 
+		margin-right: 0em; 
+	}
+	&:focus{ 
+		outline: none !important; 
+	}
 
 	// Curved Mode
 	&.curved{
