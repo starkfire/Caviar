@@ -1,14 +1,16 @@
-/* Default */
+// Default
 $btn-default-color: #dbdbdb;
-/* Right Margin */
+
+// Default Right Margin
 $default-btn-rm: 0.25em;
-/* Font Size */
+
+// Font Size
 $default-btn-tiny-fs: 14px;
 $default-btn-small-fs: 16px;
 $default-btn-big-fs: 24px;
 $default-btn-large-fs: 28px;
-/* Padding */
-// vp (vertical padding), hp (horizontal padding)
+
+// Padding (vp (vertical), hp (horizontal))
 $btn-tiny-vp: 1em*0.45;
 $btn-tiny-hp: 1em + (1em*0.45);
 $btn-small-vp: 1em*0.55;
@@ -17,9 +19,11 @@ $btn-big-vp: 1em*0.6;
 $btn-big-hp: 1em + (1em*0.6);
 $btn-large-vp: 1em*0.67;
 $btn-large-hp: 1em + (1em*0.67);
-/* Border */
+
+// Border
 $btn-default-border: 2px;
 $btn-basic-border: 1.35px;
+$btn-filled-border: 1.35px;
 
 // set default size if .cv-btn is called without any size reference (.tiny/.small/.big/.large)
 %cv-btn-default-size{
@@ -27,9 +31,8 @@ $btn-basic-border: 1.35px;
 	font-size: $default-btn-tiny-fs;
 }
 
-/*
-	Color Theming (Mixins)
-*/
+
+// Color Theming (Mixins)
 // default button
 @mixin default-btn-color($picked-color){
 	border-color: $picked-color;
@@ -61,9 +64,8 @@ $btn-basic-border: 1.35px;
 	}
 }
 
-/*
-	Main Button
-*/
+
+// Main Button
 @mixin btn-default-styles($btn-border, $default-color){
 	cursor: pointer;
 	margin: 0em $default-btn-rm 0em 0em;
@@ -82,14 +84,14 @@ $btn-basic-border: 1.35px;
 	&:last-child{ margin: 0em; }
 	&:focus{ outline: none !important; }
 
-	/* Curved Mode */
+	// Curved Mode
 	&.curved{
 		border-radius: 25px;
 		-ms-border-radius: 25px;
 		-webkit-border-radius: 25px;
 		-moz-border-radius: 25px;
 	}
-	/* Expanding Mode */
+	// Expanding Mode
 	&.expanding{
 		&:hover{
 			$exp: 1em*0.01;
@@ -104,9 +106,8 @@ $btn-basic-border: 1.35px;
 	}
 }
 
-/*
-	Size 
-*/
+
+// Size
 button{
 	@extend %cv-btn-default-size;
 
@@ -127,14 +128,13 @@ button{
 	}
 }
 
-/*
-	Default Button
-*/
+
+// Default Button
 button.cv-btn{
 	@include btn-default-styles($btn-default-border, $btn-default-color);
 	background: transparent none;
 
-	/* Color */
+	// Color
 	&.red{ @include default-btn-color($red-main); }
 	&.green{ @include default-btn-color($green-main); }
 	&.blue{ @include default-btn-color($blue-main); }
@@ -146,9 +146,8 @@ button.cv-btn{
 	&.dark{ @include default-btn-color($dark-main); }
 }
 
-/*
-	Basic Button
-*/
+
+// Basic Button
 button.cv-btn-basic{
 	@include btn-default-styles($btn-basic-border, $btn-default-color);
 	background: transparent none !important;
@@ -159,7 +158,7 @@ button.cv-btn-basic{
 		transition-duration: 0.5s;
 	}
 
-	/* Color */
+	// Color
 	&.red{ @include basic-btn-color($red-main); }
 	&.green{ @include basic-btn-color($green-main); }
 	&.blue{ @include basic-btn-color($blue-main); }
@@ -171,11 +170,10 @@ button.cv-btn-basic{
 	&.dark{ @include basic-btn-color($dark-main); }
 }
 
-/*
-	Filled Button
-*/
+
+// Filled Button
 button.cv-btn-filled{
-	@include btn-default-styles($btn-basic-border, $btn-default-color);
+	@include btn-default-styles($btn-filled-border, $btn-default-color);
 
 	&:hover{
 		$cv-btn-filled-darken: darken($btn-default-color, 10%);
@@ -183,7 +181,7 @@ button.cv-btn-filled{
 		transition-duration: 0.5s;
 	}
 
-	/* Color */
+	// Color
 	&.red{ @include filled-btn-color($red-main); }
 	&.green{ @include filled-btn-color($green-main); }
 	&.blue{ @include filled-btn-color($blue-main); }
@@ -195,16 +193,15 @@ button.cv-btn-filled{
 	&.dark{ @include filled-btn-color($dark-main); }
 }
 
-/*
-	Grouped Buttons
-*/
+
+// Grouped Buttons
 div.cv-btn-group{
 	position: relative;
 	vertical-align: middle;
 	display: inline-flex;
 
 	button.cv-btn-member{
-		@include btn-default-styles($btn-basic-border, $btn-default-color);
+		@include btn-default-styles(0, $btn-default-color);
 		border-radius: 0;
 		margin: 0;
 
@@ -214,7 +211,7 @@ div.cv-btn-group{
 			transition-duration: 0.5s;
 		}
 
-		/* Color */
+		// Color
 		&.red{ @include filled-btn-color($red-main); }
 		&.green{ @include filled-btn-color($green-main); }
 		&.blue{ @include filled-btn-color($blue-main); }
