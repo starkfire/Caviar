@@ -102,17 +102,17 @@ p {
   width: 20vw; }
 
 button, button.tiny {
-  padding-top: 0.45em;
-  padding-right: 1.45em;
-  padding-bottom: 0.45em;
-  padding-left: 1.45em;
+  padding-top: 0.37em;
+  padding-right: 1.37em;
+  padding-bottom: 0.37em;
+  padding-left: 1.37em;
   font-size: 14px; }
 
 button.tiny.expanding:hover {
-  padding-top: 0.65em;
-  padding-bottom: 0.65em;
-  padding-right: 1.65em;
-  padding-left: 1.65em;
+  padding-top: 0.57em;
+  padding-bottom: 0.57em;
+  padding-right: 1.57em;
+  padding-left: 1.57em;
   transition-duration: 0.3s; }
 
 button.small {
@@ -142,16 +142,16 @@ button.big {
     transition-duration: 0.3s; }
 
 button.large {
-  padding-top: 0.67em;
-  padding-right: 1.67em;
-  padding-bottom: 0.67em;
-  padding-left: 1.67em;
+  padding-top: 0.63em;
+  padding-right: 1.63em;
+  padding-bottom: 0.63em;
+  padding-left: 1.63em;
   font-size: 28px; }
   button.large.expanding:hover {
-    padding-top: 0.87em;
-    padding-bottom: 0.87em;
-    padding-right: 1.87em;
-    padding-left: 1.87em;
+    padding-top: 0.83em;
+    padding-bottom: 0.83em;
+    padding-right: 1.83em;
+    padding-left: 1.83em;
     transition-duration: 0.3s; }
 
 button.cv-btn {
@@ -245,7 +245,7 @@ button.cv-btn-basic {
   font-style: normal;
   font-weight: normal;
   text-shadow: none;
-  border: 1.35px solid #dbdbdb;
+  border: 1.49px solid #dbdbdb;
   border-radius: 0.28rem;
   background: transparent none !important; }
   button.cv-btn-basic:last-child {
@@ -318,7 +318,7 @@ button.cv-btn-filled {
   font-style: normal;
   font-weight: normal;
   text-shadow: none;
-  border: 1.35px solid #dbdbdb;
+  border: 1px solid #dbdbdb;
   border-radius: 0.28rem; }
   button.cv-btn-filled:last-child {
     margin-right: 0em; }
