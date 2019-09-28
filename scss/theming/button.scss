@@ -61,6 +61,16 @@ $expand-rate: 1em*0.2;
 		-ms-border-radius: 25px;
 		-webkit-border-radius: 25px;
 		-moz-border-radius: 25px;
+
+		&.transform{
+			&:hover{
+				border-radius: 0.28rem;
+				-ms-border-radius: 0.28rem;
+				-webkit-border-radius: 0.28rem;
+				-moz-border-radius: 0.28rem;
+				transition-duration: 0.3s;
+			}
+		}
 	}
 }
 
