@@ -101,58 +101,12 @@ p {
 .cv-avatar.large {
   width: 20vw; }
 
-button, button.tiny {
-  padding-top: 0.37em;
-  padding-right: 1.37em;
-  padding-bottom: 0.37em;
-  padding-left: 1.37em;
-  font-size: 14px; }
-
-button.tiny.expanding:hover {
-  padding-top: 0.57em;
-  padding-bottom: 0.57em;
-  padding-right: 1.57em;
-  padding-left: 1.57em;
-  transition-duration: 0.3s; }
-
-button.small {
-  padding-top: 0.55em;
-  padding-right: 1.55em;
-  padding-bottom: 0.55em;
-  padding-left: 1.55em;
+button, button.small {
+  padding-top: 0.4em;
+  padding-right: 1.4em;
+  padding-bottom: 0.4em;
+  padding-left: 1.4em;
   font-size: 16px; }
-  button.small.expanding:hover {
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-    padding-right: 1.75em;
-    padding-left: 1.75em;
-    transition-duration: 0.3s; }
-
-button.big {
-  padding-top: 0.6em;
-  padding-right: 1.6em;
-  padding-bottom: 0.6em;
-  padding-left: 1.6em;
-  font-size: 24px; }
-  button.big.expanding:hover {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-right: 1.8em;
-    padding-left: 1.8em;
-    transition-duration: 0.3s; }
-
-button.large {
-  padding-top: 0.63em;
-  padding-right: 1.63em;
-  padding-bottom: 0.63em;
-  padding-left: 1.63em;
-  font-size: 28px; }
-  button.large.expanding:hover {
-    padding-top: 0.83em;
-    padding-bottom: 0.83em;
-    padding-right: 1.83em;
-    padding-left: 1.83em;
-    transition-duration: 0.3s; }
 
 button.cv-btn {
   cursor: pointer;
@@ -167,327 +121,238 @@ button.cv-btn {
   font-weight: normal;
   text-shadow: none;
   border: 2px solid #dbdbdb;
-  border-radius: 0.28rem;
-  background: transparent none; }
+  border-radius: 0.28rem; }
   button.cv-btn:last-child {
     margin-right: 0em; }
   button.cv-btn:focus {
     outline: none !important; }
+  button.cv-btn.transform:hover {
+    border-radius: 25px;
+    -ms-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    transition-duration: 0.5s; }
   button.cv-btn.curved {
     border-radius: 25px;
     -ms-border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px; }
-  button.cv-btn.red {
-    border-color: #d93843; }
-    button.cv-btn.red:hover {
-      color: white;
-      background-color: #d93843;
-      transition-duration: 0.3s; }
-  button.cv-btn.green {
-    border-color: #73c088; }
-    button.cv-btn.green:hover {
-      color: white;
-      background-color: #73c088;
-      transition-duration: 0.3s; }
-  button.cv-btn.blue {
-    border-color: #54c0cc; }
-    button.cv-btn.blue:hover {
-      color: white;
-      background-color: #54c0cc;
-      transition-duration: 0.3s; }
-  button.cv-btn.teal {
-    border-color: #2fc4b2; }
-    button.cv-btn.teal:hover {
-      color: white;
-      background-color: #2fc4b2;
-      transition-duration: 0.3s; }
-  button.cv-btn.orange {
-    border-color: #fe7235; }
-    button.cv-btn.orange:hover {
-      color: white;
-      background-color: #fe7235;
-      transition-duration: 0.3s; }
-  button.cv-btn.yellow {
-    border-color: #ffc43d; }
-    button.cv-btn.yellow:hover {
-      color: white;
-      background-color: #ffc43d;
-      transition-duration: 0.3s; }
-  button.cv-btn.brown {
-    border-color: #c6a477; }
-    button.cv-btn.brown:hover {
-      color: white;
-      background-color: #c6a477;
-      transition-duration: 0.3s; }
-  button.cv-btn.purple {
-    border-color: #f65be3; }
-    button.cv-btn.purple:hover {
-      color: white;
-      background-color: #f65be3;
-      transition-duration: 0.3s; }
-  button.cv-btn.dark {
-    border-color: #555555; }
-    button.cv-btn.dark:hover {
-      color: white;
-      background-color: #555555;
-      transition-duration: 0.3s; }
-
-button.cv-btn-basic {
-  cursor: pointer;
-  margin: 0em 0.25em 0em 0em;
-  position: relative;
-  display: inline-block;
-  min-height: 1em;
-  text-align: center;
-  text-transform: none;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
-  text-shadow: none;
-  border: 1.49px solid #dbdbdb;
-  border-radius: 0.28rem;
-  background: transparent none !important; }
-  button.cv-btn-basic:last-child {
-    margin-right: 0em; }
-  button.cv-btn-basic:focus {
-    outline: none !important; }
-  button.cv-btn-basic.curved {
-    border-radius: 25px;
-    -ms-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px; }
-  button.cv-btn-basic:hover {
-    border-color: #a8a8a8;
-    transition-duration: 0.5s; }
-  button.cv-btn-basic.red {
-    border-color: #d93843; }
-    button.cv-btn-basic.red:hover {
-      border-color: #901b23;
+    button.cv-btn.curved.transform:hover {
+      border-radius: 0.28rem;
+      -ms-border-radius: 0.28rem;
+      -webkit-border-radius: 0.28rem;
+      -moz-border-radius: 0.28rem;
       transition-duration: 0.5s; }
-  button.cv-btn-basic.green {
-    border-color: #73c088; }
-    button.cv-btn-basic.green:hover {
-      border-color: #408d55;
-      transition-duration: 0.5s; }
-  button.cv-btn-basic.blue {
-    border-color: #54c0cc; }
-    button.cv-btn-basic.blue:hover {
-      border-color: #2b858f;
-      transition-duration: 0.5s; }
-  button.cv-btn-basic.teal {
-    border-color: #2fc4b2; }
-    button.cv-btn-basic.teal:hover {
-      border-color: #1b7267;
-      transition-duration: 0.5s; }
-  button.cv-btn-basic.orange {
-    border-color: #fe7235; }
-    button.cv-btn-basic.orange:hover {
-      border-color: #cc3f01;
-      transition-duration: 0.5s; }
-  button.cv-btn-basic.yellow {
-    border-color: #ffc43d; }
-    button.cv-btn-basic.yellow:hover {
-      border-color: #d69500;
-      transition-duration: 0.5s; }
-  button.cv-btn-basic.brown {
-    border-color: #c6a477; }
-    button.cv-btn-basic.brown:hover {
-      border-color: #98723f;
-      transition-duration: 0.5s; }
-  button.cv-btn-basic.purple {
-    border-color: #f65be3; }
-    button.cv-btn-basic.purple:hover {
-      border-color: #df0cc5;
-      transition-duration: 0.5s; }
-  button.cv-btn-basic.dark {
-    border-color: #555555; }
-    button.cv-btn-basic.dark:hover {
-      border-color: #222222;
-      transition-duration: 0.5s; }
-
-button.cv-btn-filled {
-  cursor: pointer;
-  margin: 0em 0.25em 0em 0em;
-  position: relative;
-  display: inline-block;
-  min-height: 1em;
-  text-align: center;
-  text-transform: none;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
-  text-shadow: none;
-  border: 1px solid #dbdbdb;
-  border-radius: 0.28rem; }
-  button.cv-btn-filled:last-child {
-    margin-right: 0em; }
-  button.cv-btn-filled:focus {
-    outline: none !important; }
-  button.cv-btn-filled.curved {
-    border-radius: 25px;
-    -ms-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px; }
-  button.cv-btn-filled:hover {
+  button.cv-btn:hover {
+    border-color: #c2c2c2;
     background-color: #c2c2c2;
     transition-duration: 0.5s; }
-  button.cv-btn-filled.red {
+  button.cv-btn.red {
     border-color: #d93843;
     background-color: #d93843;
     color: white; }
-    button.cv-btn-filled.red:hover {
-      background-color: #ba242e;
+    button.cv-btn.red:hover {
+      border-color: #c72631;
+      background-color: #c72631;
       transition-duration: 0.5s; }
-  button.cv-btn-filled.green {
+  button.cv-btn.green {
     border-color: #73c088;
     background-color: #73c088;
     color: white; }
-    button.cv-btn-filled.green:hover {
-      background-color: #50b06a;
+    button.cv-btn.green:hover {
+      border-color: #5ab573;
+      background-color: #5ab573;
       transition-duration: 0.5s; }
-  button.cv-btn-filled.blue {
+  button.cv-btn.blue {
     border-color: #54c0cc;
     background-color: #54c0cc;
     color: white; }
-    button.cv-btn-filled.blue:hover {
-      background-color: #36aab7;
+    button.cv-btn.blue:hover {
+      border-color: #3ab5c2;
+      background-color: #3ab5c2;
       transition-duration: 0.5s; }
-  button.cv-btn-filled.teal {
+  button.cv-btn.teal {
     border-color: #2fc4b2;
     background-color: #2fc4b2;
     color: white; }
-    button.cv-btn-filled.teal:hover {
-      background-color: #259b8d;
+    button.cv-btn.teal:hover {
+      border-color: #28a798;
+      background-color: #28a798;
       transition-duration: 0.5s; }
-  button.cv-btn-filled.orange {
+  button.cv-btn.orange {
     border-color: #fe7235;
     background-color: #fe7235;
     color: white; }
-    button.cv-btn-filled.orange:hover {
-      background-color: #fe4f02;
+    button.cv-btn.orange:hover {
+      border-color: #fe5911;
+      background-color: #fe5911;
       transition-duration: 0.5s; }
-  button.cv-btn-filled.yellow {
+  button.cv-btn.yellow {
     border-color: #ffc43d;
     background-color: #ffc43d;
     color: white; }
-    button.cv-btn-filled.yellow:hover {
-      background-color: #ffb40a;
+    button.cv-btn.yellow:hover {
+      border-color: #ffb919;
+      background-color: #ffb919;
       transition-duration: 0.5s; }
-  button.cv-btn-filled.brown {
+  button.cv-btn.brown {
     border-color: #c6a477;
     background-color: #c6a477;
     color: white; }
-    button.cv-btn-filled.brown:hover {
-      background-color: #b78c53;
+    button.cv-btn.brown:hover {
+      border-color: #bb935e;
+      background-color: #bb935e;
       transition-duration: 0.5s; }
-  button.cv-btn-filled.purple {
+  button.cv-btn.purple {
     border-color: #f65be3;
     background-color: #f65be3;
     color: white; }
-    button.cv-btn-filled.purple:hover {
-      background-color: #f32bdb;
+    button.cv-btn.purple:hover {
+      border-color: #f439dd;
+      background-color: #f439dd;
       transition-duration: 0.5s; }
-  button.cv-btn-filled.dark {
+  button.cv-btn.dark {
     border-color: #555555;
     background-color: #555555;
     color: white; }
-    button.cv-btn-filled.dark:hover {
-      background-color: #3c3c3c;
+    button.cv-btn.dark:hover {
+      border-color: #434343;
+      background-color: #434343;
       transition-duration: 0.5s; }
 
-div.cv-btn-group {
+button.cv-btn-minimal {
+  cursor: pointer;
+  margin: 0em 0.25em 0em 0em;
   position: relative;
-  vertical-align: middle;
-  display: inline-flex; }
-  div.cv-btn-group button.cv-btn-member {
-    cursor: pointer;
-    margin: 0em 0.25em 0em 0em;
-    position: relative;
-    display: inline-block;
-    min-height: 1em;
-    text-align: center;
-    text-transform: none;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: normal;
-    text-shadow: none;
-    border: 0 solid #dbdbdb;
-    border-radius: 0.28rem;
-    border-radius: 0;
-    margin: 0; }
-    div.cv-btn-group button.cv-btn-member:last-child {
-      margin-right: 0em; }
-    div.cv-btn-group button.cv-btn-member:focus {
-      outline: none !important; }
-    div.cv-btn-group button.cv-btn-member.curved {
-      border-radius: 25px;
-      -ms-border-radius: 25px;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px; }
-    div.cv-btn-group button.cv-btn-member:hover {
-      background-color: #c2c2c2;
+  display: inline-block;
+  min-height: 1em;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  text-shadow: none;
+  border: 2px solid #dbdbdb;
+  border-radius: 0.28rem;
+  background: transparent none; }
+  button.cv-btn-minimal:last-child {
+    margin-right: 0em; }
+  button.cv-btn-minimal:focus {
+    outline: none !important; }
+  button.cv-btn-minimal.transform:hover {
+    border-radius: 25px;
+    -ms-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    transition-duration: 0.5s; }
+  button.cv-btn-minimal.curved {
+    border-radius: 25px;
+    -ms-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px; }
+    button.cv-btn-minimal.curved.transform:hover {
+      border-radius: 0.28rem;
+      -ms-border-radius: 0.28rem;
+      -webkit-border-radius: 0.28rem;
+      -moz-border-radius: 0.28rem;
       transition-duration: 0.5s; }
-    div.cv-btn-group button.cv-btn-member.red {
-      border-color: #d93843;
+  button.cv-btn-minimal.red {
+    border-color: #d93843; }
+    button.cv-btn-minimal.red:hover {
+      color: white;
       background-color: #d93843;
-      color: white; }
-      div.cv-btn-group button.cv-btn-member.red:hover {
-        background-color: #ba242e;
-        transition-duration: 0.5s; }
-    div.cv-btn-group button.cv-btn-member.green {
-      border-color: #73c088;
+      transition-duration: 0.5s; }
+  button.cv-btn-minimal.green {
+    border-color: #73c088; }
+    button.cv-btn-minimal.green:hover {
+      color: white;
       background-color: #73c088;
-      color: white; }
-      div.cv-btn-group button.cv-btn-member.green:hover {
-        background-color: #50b06a;
-        transition-duration: 0.5s; }
-    div.cv-btn-group button.cv-btn-member.blue {
-      border-color: #54c0cc;
+      transition-duration: 0.5s; }
+  button.cv-btn-minimal.blue {
+    border-color: #54c0cc; }
+    button.cv-btn-minimal.blue:hover {
+      color: white;
       background-color: #54c0cc;
-      color: white; }
-      div.cv-btn-group button.cv-btn-member.blue:hover {
-        background-color: #36aab7;
-        transition-duration: 0.5s; }
-    div.cv-btn-group button.cv-btn-member.teal {
-      border-color: #2fc4b2;
+      transition-duration: 0.5s; }
+  button.cv-btn-minimal.teal {
+    border-color: #2fc4b2; }
+    button.cv-btn-minimal.teal:hover {
+      color: white;
       background-color: #2fc4b2;
-      color: white; }
-      div.cv-btn-group button.cv-btn-member.teal:hover {
-        background-color: #259b8d;
-        transition-duration: 0.5s; }
-    div.cv-btn-group button.cv-btn-member.orange {
-      border-color: #fe7235;
+      transition-duration: 0.5s; }
+  button.cv-btn-minimal.orange {
+    border-color: #fe7235; }
+    button.cv-btn-minimal.orange:hover {
+      color: white;
       background-color: #fe7235;
-      color: white; }
-      div.cv-btn-group button.cv-btn-member.orange:hover {
-        background-color: #fe4f02;
-        transition-duration: 0.5s; }
-    div.cv-btn-group button.cv-btn-member.yellow {
-      border-color: #ffc43d;
+      transition-duration: 0.5s; }
+  button.cv-btn-minimal.yellow {
+    border-color: #ffc43d; }
+    button.cv-btn-minimal.yellow:hover {
+      color: white;
       background-color: #ffc43d;
-      color: white; }
-      div.cv-btn-group button.cv-btn-member.yellow:hover {
-        background-color: #ffb40a;
-        transition-duration: 0.5s; }
-    div.cv-btn-group button.cv-btn-member.brown {
-      border-color: #c6a477;
+      transition-duration: 0.5s; }
+  button.cv-btn-minimal.brown {
+    border-color: #c6a477; }
+    button.cv-btn-minimal.brown:hover {
+      color: white;
       background-color: #c6a477;
-      color: white; }
-      div.cv-btn-group button.cv-btn-member.brown:hover {
-        background-color: #b78c53;
-        transition-duration: 0.5s; }
-    div.cv-btn-group button.cv-btn-member.purple {
-      border-color: #f65be3;
+      transition-duration: 0.5s; }
+  button.cv-btn-minimal.purple {
+    border-color: #f65be3; }
+    button.cv-btn-minimal.purple:hover {
+      color: white;
       background-color: #f65be3;
-      color: white; }
-      div.cv-btn-group button.cv-btn-member.purple:hover {
-        background-color: #f32bdb;
-        transition-duration: 0.5s; }
-    div.cv-btn-group button.cv-btn-member.dark {
-      border-color: #555555;
+      transition-duration: 0.5s; }
+  button.cv-btn-minimal.dark {
+    border-color: #555555; }
+    button.cv-btn-minimal.dark:hover {
+      color: white;
       background-color: #555555;
-      color: white; }
-      div.cv-btn-group button.cv-btn-member.dark:hover {
-        background-color: #3c3c3c;
-        transition-duration: 0.5s; }
+      transition-duration: 0.5s; }
+
+button.tiny {
+  padding-top: 0.3em;
+  padding-right: 1.3em;
+  padding-bottom: 0.3em;
+  padding-left: 1.3em;
+  font-size: 12px; }
+  button.tiny.expanding:hover {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    transition-duration: 0.5s; }
+
+button.small.expanding:hover {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-right: 1.6em;
+  padding-left: 1.6em;
+  transition-duration: 0.5s; }
+
+button.big {
+  padding-top: 0.45em;
+  padding-right: 1.45em;
+  padding-bottom: 0.45em;
+  padding-left: 1.45em;
+  font-size: 24px; }
+  button.big.expanding:hover {
+    padding-top: 0.65em;
+    padding-bottom: 0.65em;
+    padding-right: 1.65em;
+    padding-left: 1.65em;
+    transition-duration: 0.5s; }
+
+button.large {
+  padding-top: 0.6em;
+  padding-right: 1.6em;
+  padding-bottom: 0.6em;
+  padding-left: 1.6em;
+  font-size: 28px; }
+  button.large.expanding:hover {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-right: 1.8em;
+    padding-left: 1.8em;
+    transition-duration: 0.5s; }
