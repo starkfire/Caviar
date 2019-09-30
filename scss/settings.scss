@@ -1,9 +1,9 @@
-/* Fonts */
+// Fonts
 $font-main: 'Source Sans Pro', sans-serif;
 $font-main-url: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap';
 //$font-main-url: 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap';
 
-/* Color Presets */
+// Color Presets
 $red-main: #d93843;			// jasper
 $green-main: #73c088;
 $blue-main: #54c0cc;
@@ -13,7 +13,6 @@ $yellow-main: #ffc43d;		// sunglow
 $brown-main: #c6a477;
 $purple-main: #f65be3;
 $dark-main: #555555;
-
 // not yet integrated
 $tea-green: #def6ca;
 $lavender-rose: #f497da;
@@ -22,13 +21,13 @@ $army-green: #41521f;
 $pearl-aqua: #7adfbb;
 
 
-/* Links */
+// Links
 $a-default-color: #055dab;
 $a-activated-color: #46a1f2;		// hover and active
 $a-inactive-color: #000000;			// visited
 
 
-/* Avatar */
+// Avatar
 $avatar-large-width: 20vw;
 $avatar-big-width: 15vw;
 $avatar-medium-width: 10vw;
@@ -36,7 +35,8 @@ $avatar-small-width: 5vw;
 $avatar-tiny-width: 2.75vw;
 
 
-/* Buttons */
+// Buttons
+
 // Color (Default)
 $btn-default-color: #dbdbdb;
 // Right Margin (Default)
