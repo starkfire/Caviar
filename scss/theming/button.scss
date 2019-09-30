@@ -106,11 +106,20 @@ $default-transition-rate: 0.5s;
 	}
 }
 
-@mixin cv-btn-minimal-color($picked-color){
+@mixin cv-btn-autofill-color($picked-color){
 	border-color: $picked-color;
 	&:hover{
 		color: white;
 		background-color: $picked-color;
+		transition-duration: 0.5s;
+	}
+}
+
+@mixin cv-btn-minimal-color($picked-color){
+	border-color: $picked-color;
+	&:hover{
+		$minimal-darken: darken($picked-color, 12%);
+		border-color: $minimal-darken;
 		transition-duration: 0.5s;
 	}
 }
@@ -135,6 +144,21 @@ button.cv-btn{
 	&.brown{ @include cv-btn-color($brown-main); }
 	&.purple{ @include cv-btn-color($purple-main); }
 	&.dark{ @include cv-btn-color($dark-main); }
+}
+
+button.cv-btn-autofill{
+	@include cv-btn-styles($btn-default-border, $btn-default-color);
+	background: transparent none;
+
+	&.red{ @include cv-btn-autofill-color($red-main); }
+	&.green{ @include cv-btn-autofill-color($green-main); }
+	&.blue{ @include cv-btn-autofill-color($blue-main); }
+	&.teal{ @include cv-btn-autofill-color($teal-main); }
+	&.orange{ @include cv-btn-autofill-color($orange-main); }
+	&.yellow{ @include cv-btn-autofill-color($yellow-main); }
+	&.brown{ @include cv-btn-autofill-color($brown-main); }
+	&.purple{ @include cv-btn-autofill-color($purple-main); }
+	&.dark{ @include cv-btn-autofill-color($dark-main); }
 }
 
 button.cv-btn-minimal{
