@@ -1,34 +1,3 @@
-// Color (Default)
-$btn-default-color: #dbdbdb;
-
-// Right Margin (Default)
-$btn-default-rm: 0.25em;
-
-// Font Size (Default)
-$default-btn-tiny-fs: 12px;
-$default-btn-small-fs: 16px;
-$default-btn-big-fs: 24px;
-$default-btn-large-fs: 28px;
-
-// Padding (vp = vertical, hp = horizontal)
-$btn-tiny-vp: 1em*0.3;
-$btn-tiny-hp: 1em + (1em*0.3);
-$btn-small-vp: 1em*0.4;
-$btn-small-hp: 1em + (1em*0.4);
-$btn-big-vp: 1em*0.45;
-$btn-big-hp: 1em + (1em*0.45);
-$btn-large-vp: 1em*0.6;
-$btn-large-hp: 1em + (1em*0.6);
-
-// Border
-$btn-default-border: 2px;
-
-// Expansion Rate
-$expand-rate: 1em*0.2;
-
-// Transition Rate
-$default-transition-rate: 0.5s;
-
 // set default size if .cv-btn is called without any size reference
 %cv-btn-default-size{
 	padding: { top: $btn-small-vp; right: $btn-small-hp; bottom: $btn-small-vp; left: $btn-small-hp; }
@@ -95,46 +64,36 @@ $default-transition-rate: 0.5s;
 
 // Color
 @mixin cv-btn-color($picked-color){
-	border-color: $picked-color;
-	background-color: $picked-color;
-	color: white;
-	&:hover{
-		$cv-btn-darken: darken($picked-color, 7%);
-		border-color: $cv-btn-darken;
-		background-color: $cv-btn-darken;
-		transition-duration: 0.5s;
-	}
-}
-
-@mixin cv-btn-autofill-color($picked-color){
-	border-color: $picked-color;
-	&:hover{
-		color: white;
+	&.cv-btn{
+		border-color: $picked-color;
 		background-color: $picked-color;
-		transition-duration: 0.5s;
+		color: white;
+		&:hover{
+			$cv-btn-darken: darken($picked-color, 7%);
+			border-color: $cv-btn-darken;
+			background-color: $cv-btn-darken;
+			transition-duration: 0.5s;
+		}
+	}
+	&.cv-btn-autofill{
+		border-color: $picked-color;
+		&:hover{
+			color: white;
+			background-color: $picked-color;
+			transition-duration: 0.5s;
+		}	
+	}
+	&.cv-btn-minimal{
+		border-color: $picked-color;
+		&:hover{
+			$minimal-darken: darken($picked-color, 12%);
+			border-color: $minimal-darken;
+			transition-duration: 0.5s;
+		}	
 	}
 }
 
-@mixin cv-btn-minimal-color($picked-color){
-	border-color: $picked-color;
-	&:hover{
-		$minimal-darken: darken($picked-color, 12%);
-		border-color: $minimal-darken;
-		transition-duration: 0.5s;
-	}
-}
-
-// Variations
-button.cv-btn{
-	@include cv-btn-styles($btn-default-border, $btn-default-color);
-
-	&:hover{
-		$cv-btn-darken: darken($btn-default-color, 10%);
-		border-color: $cv-btn-darken;
-		background-color: $cv-btn-darken;
-		transition-duration: 0.5s;
-	}
-
+%cv-btn-color-presets{
 	&.red{ @include cv-btn-color($red-main); }
 	&.green{ @include cv-btn-color($green-main); }
 	&.blue{ @include cv-btn-color($blue-main); }
@@ -146,34 +105,33 @@ button.cv-btn{
 	&.dark{ @include cv-btn-color($dark-main); }
 }
 
+// Variations
+button.cv-btn{
+	@include cv-btn-styles($btn-default-border, $btn-default-color);
+
+	// if no color preset is specified
+	&:hover{
+		$cv-btn-darken: darken($btn-default-color, 10%);
+		border-color: $cv-btn-darken;
+		background-color: $cv-btn-darken;
+		transition-duration: 0.5s;
+	}
+
+	@extend %cv-btn-color-presets;
+}
+
 button.cv-btn-autofill{
 	@include cv-btn-styles($btn-default-border, $btn-default-color);
 	background: transparent none;
 
-	&.red{ @include cv-btn-autofill-color($red-main); }
-	&.green{ @include cv-btn-autofill-color($green-main); }
-	&.blue{ @include cv-btn-autofill-color($blue-main); }
-	&.teal{ @include cv-btn-autofill-color($teal-main); }
-	&.orange{ @include cv-btn-autofill-color($orange-main); }
-	&.yellow{ @include cv-btn-autofill-color($yellow-main); }
-	&.brown{ @include cv-btn-autofill-color($brown-main); }
-	&.purple{ @include cv-btn-autofill-color($purple-main); }
-	&.dark{ @include cv-btn-autofill-color($dark-main); }
+	@extend %cv-btn-color-presets;
 }
 
 button.cv-btn-minimal{
 	@include cv-btn-styles($btn-default-border, $btn-default-color);
 	background: transparent none;
 
-	&.red{ @include cv-btn-minimal-color($red-main); }
-	&.green{ @include cv-btn-minimal-color($green-main); }
-	&.blue{ @include cv-btn-minimal-color($blue-main); }
-	&.teal{ @include cv-btn-minimal-color($teal-main); }
-	&.orange{ @include cv-btn-minimal-color($orange-main); }
-	&.yellow{ @include cv-btn-minimal-color($yellow-main); }
-	&.brown{ @include cv-btn-minimal-color($brown-main); }
-	&.purple{ @include cv-btn-minimal-color($purple-main); }
-	&.dark{ @include cv-btn-minimal-color($dark-main); }
+	@extend %cv-btn-color-presets;
 }
 
 // Size
