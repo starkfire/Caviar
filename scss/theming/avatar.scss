@@ -1,7 +1,30 @@
+@mixin corner-tweaks($border-radius){
+	border-radius: $border-radius;
+	-ms-border-radius: $border-radius;
+	-webkit-border-radius: $border-radius;
+	-moz-border-radius: $border-radius;
+}
+
 .cv-avatar{
 	// Type
-	&.rounded	{ border-radius: 5%; }
-	&.circular	{ border-radius: 50%; }
+	&.rounded{ 
+		border-radius: $cv-avatar-rounded-border-radius;
+		&.transform{
+			&:hover{
+				@include corner-tweaks($cv-avatar-circular-border-radius);
+				transition-duration: $default-avatar-transition-rate;
+			}
+		}
+	}
+	&.circular{ 
+		border-radius: $cv-avatar-circular-border-radius;
+		&.transform{
+			&:hover{
+				@include corner-tweaks($cv-avatar-rounded-border-radius);
+				transition-duration: $default-avatar-transition-rate;
+			}
+		}
+	}
 	// Size
 	&.tiny		{ width: $avatar-tiny-width; }
 	&.small		{ width: $avatar-small-width; }
