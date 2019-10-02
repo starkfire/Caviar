@@ -33,7 +33,9 @@ $avatar-big-width: 15vw;
 $avatar-medium-width: 10vw;
 $avatar-small-width: 5vw;
 $avatar-tiny-width: 2.75vw;
-
+$cv-avatar-rounded-border-radius: 5%;
+$cv-avatar-circular-border-radius: 50%;
+$default-avatar-transition-rate: 0.5s;
 
 // Buttons
 
@@ -60,4 +62,4 @@ $btn-default-border: 2px;
 // Expansion Rate
 $expand-rate: 1em*0.2;
 // Transition Rate
-$default-transition-rate: 0.5s;
+$default-btn-transition-rate: 0.5s;
