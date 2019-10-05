@@ -1,23 +1,76 @@
+%headings-shared-properties{
+	text-transform: none;
+	font-weight: normal;
+}
+
 h1.cv-h1{
+	@extend %headings-shared-properties;
 	font-size: $h1-default-size;
+	line-height: $h1-default-line-height;
+	@media only screen and (max-width: $mobile-default-width){
+		font-size: $h1-default-mobile-font-size;
+	}
+	@media only screen and (min-width: $mobile-default-width+1 ) and (max-width: $tablet-small-default-width){
+		font-size: $h1-default-tablet-small-height;
+	}
 }
 
 h2.cv-h2{
+	@extend %headings-shared-properties;
 	font-size: $h2-default-size;
+	line-height: $h2-default-line-height;
+	@media only screen and (max-width: $mobile-default-width){
+		font-size: $h2-default-mobile-font-size;
+	}
+	@media only screen and (min-width: $mobile-default-width+1 ) and (max-width: $tablet-small-default-width){
+		font-size: $h2-default-tablet-small-font-size;
+	}
 }
 
 h3.cv-h3{
+	@extend %headings-shared-properties;
 	font-size: $h3-default-size;
+	line-height: $h3-default-line-height;
+	@media only screen and (max-width: $mobile-default-width){
+		font-size: $h3-default-mobile-font-size;
+	}
+	@media only screen and (min-width: $mobile-default-width+1 ) and (max-width: $tablet-small-default-width){
+		font-size: $h3-default-tablet-small-font-size;
+	}
 }
 
 h4.cv-h4{
+	@extend %headings-shared-properties;
 	font-size: $h4-default-size;
+	line-height: $h4-default-line-height;
+	@media only screen and (max-width: $mobile-default-width){
+		font-size: $h4-default-mobile-font-size;
+	}
+	@media only screen and (min-width: $mobile-default-width+1 ) and (max-width: $tablet-small-default-width){
+		font-size: $h4-default-tablet-small-font-size;
+	}
 }
 
 h5.cv-h5{
+	@extend %headings-shared-properties;
 	font-size: $h5-default-size;
+	line-height: $h5-default-line-height;
+	@media only screen and (max-width: $mobile-default-width){
+		font-size: $h5-default-mobile-font-size;
+	}
+	@media only screen and (min-width: $mobile-default-width+1 ) and (max-width: $tablet-small-default-width){
+		font-size: $h5-default-tablet-small-font-size;
+	}
 }
 
 h6.cv-h6{
+	@extend %headings-shared-properties;
 	font-size: $h6-default-size;
+	line-height: $h6-default-line-height;
+	@media only screen and (max-width: $mobile-default-width){
+		font-size: $h6-default-mobile-font-size;
+	}
+	@media only screen and (min-width: $mobile-default-width+1 ) and (max-width: $tablet-small-default-width){
+		font-size: $h6-default-tablet-small-font-size;
+	}
 }
