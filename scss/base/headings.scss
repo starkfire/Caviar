@@ -1,6 +1,17 @@
 %headings-shared-properties{
 	text-transform: none;
+	font-style: $font-main;
 	font-weight: normal;
+
+	&.red{ color: $red-main; }
+	&.green{ color: $green-main; }
+	&.blue{ color: $blue-main; }
+	&.teal{ color: $teal-main; }
+	&.orange{ color: $orange-main; }
+	&.yellow{ color: $yellow-main; }
+	&.brown{ color: $brown-main; }
+	&.purple{ color: $purple-main; }
+	&.dark{ color: $dark-main; }
 }
 
 h1.cv-h1{
@@ -11,7 +22,7 @@ h1.cv-h1{
 		font-size: $h1-default-mobile-font-size;
 	}
 	@media only screen and (min-width: $mobile-default-width+1 ) and (max-width: $tablet-small-default-width){
-		font-size: $h1-default-tablet-small-height;
+		font-size: $h1-default-tablet-small-font-size;
 	}
 }
 
