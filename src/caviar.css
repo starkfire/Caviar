@@ -55,6 +55,18 @@ a {
 p {
   margin: 0; }
 
+.cv-btn.right-aligned {
+  float: right; }
+
+.cv-btn.left-aligned {
+  float: left; }
+
+.cv-header.right-aligned {
+  text-align: right; }
+
+.cv-header.left-aligned {
+  text-align: left; }
+
 .cv-container {
   position: relative;
   display: block;
