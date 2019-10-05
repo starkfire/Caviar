@@ -1,7 +1,7 @@
-%headings-shared-properties{
-	text-transform: none;
+.cv-header{
 	font-style: $font-main;
 	font-weight: normal;
+	text-transform: none;
 
 	&.red{ color: $red-main; }
 	&.green{ color: $green-main; }
@@ -14,8 +14,7 @@
 	&.dark{ color: $dark-main; }
 }
 
-h1.cv-h1{
-	@extend %headings-shared-properties;
+h1.cv-header{
 	font-size: $h1-default-size;
 	line-height: $h1-default-line-height;
 	@media only screen and (max-width: $mobile-default-width){
@@ -26,8 +25,7 @@ h1.cv-h1{
 	}
 }
 
-h2.cv-h2{
-	@extend %headings-shared-properties;
+h2.cv-header{
 	font-size: $h2-default-size;
 	line-height: $h2-default-line-height;
 	@media only screen and (max-width: $mobile-default-width){
@@ -38,8 +36,7 @@ h2.cv-h2{
 	}
 }
 
-h3.cv-h3{
-	@extend %headings-shared-properties;
+h3.cv-header{
 	font-size: $h3-default-size;
 	line-height: $h3-default-line-height;
 	@media only screen and (max-width: $mobile-default-width){
@@ -50,8 +47,7 @@ h3.cv-h3{
 	}
 }
 
-h4.cv-h4{
-	@extend %headings-shared-properties;
+h4.cv-header{
 	font-size: $h4-default-size;
 	line-height: $h4-default-line-height;
 	@media only screen and (max-width: $mobile-default-width){
@@ -62,8 +58,7 @@ h4.cv-h4{
 	}
 }
 
-h5.cv-h5{
-	@extend %headings-shared-properties;
+h5.cv-header{
 	font-size: $h5-default-size;
 	line-height: $h5-default-line-height;
 	@media only screen and (max-width: $mobile-default-width){
@@ -74,8 +69,7 @@ h5.cv-h5{
 	}
 }
 
-h6.cv-h6{
-	@extend %headings-shared-properties;
+h6.cv-header{
 	font-size: $h6-default-size;
 	line-height: $h6-default-line-height;
 	@media only screen and (max-width: $mobile-default-width){
