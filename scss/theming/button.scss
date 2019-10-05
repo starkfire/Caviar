@@ -5,13 +5,6 @@
 }
 
 // curved mode
-%curved-mode{
-	border-radius: 25px;
-	-ms-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-}
-
 @mixin corner-tweaks($border-radius){
 	border-radius: $border-radius;
 	-ms-border-radius: $border-radius;
