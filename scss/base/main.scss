@@ -31,3 +31,23 @@ a{
 p{
 	margin: 0;
 }
+
+// Alignment
+// for Component Elements
+.cv-btn{
+	&.right-aligned{
+		float: right;
+	}
+	&.left-aligned{
+		float: left;
+	}
+}
+// for Text Elements
+.cv-header{
+	&.right-aligned{
+		text-align: right;
+	}
+	&.left-aligned{
+		text-align: left;
+	}
+}
