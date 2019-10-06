@@ -37,6 +37,7 @@
 		outline: none !important;
 	}
 
+	// Shape Transform
 	&.transform{
 		&:hover{
 			@include corner-tweaks(25px);
@@ -44,6 +45,7 @@
 		}
 	}
 
+	// Curved Mode
 	&.curved{
 		@include corner-tweaks(25px);
 
@@ -53,6 +55,12 @@
 				transition-duration: $default-btn-transition-rate;
 			}
 		}
+	}
+
+	// Header Mode
+	&.header{
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
 	}
 }
 
