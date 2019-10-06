@@ -15,7 +15,7 @@
 // Main Styles
 @mixin cv-btn-styles($btn-border, $default-color){
 	cursor: pointer;
-	margin: 0em $btn-default-rm 0em 0em;
+	margin: 0em $btn-default-rm 0.3em 0em;
 	position: relative;
 	display: inline-block;
 	min-height: 1em;
