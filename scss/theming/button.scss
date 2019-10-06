@@ -121,25 +121,6 @@ button.cv-btn{
 	}
 
 	@extend %cv-btn-color-presets;
-}
-
-button.cv-btn-autofill{
-	@include cv-btn-styles($btn-default-border, $btn-default-color);
-	background: transparent none;
-
-	@extend %cv-btn-color-presets;
-}
-
-button.cv-btn-minimal{
-	@include cv-btn-styles($btn-default-border, $btn-default-color);
-	background: transparent none;
-
-	@extend %cv-btn-color-presets;
-}
-
-// Size
-button{
-	@extend %cv-btn-default-size;
 
 	&.tiny{
 		padding: { top: $btn-tiny-vp; right: $btn-tiny-hp; bottom: $btn-tiny-vp; left: $btn-tiny-hp; }
@@ -194,4 +175,23 @@ button{
 			}
 		}
 	}
+}
+
+button.cv-btn-autofill{
+	@include cv-btn-styles($btn-default-border, $btn-default-color);
+	background: transparent none;
+
+	@extend %cv-btn-color-presets;
+}
+
+button.cv-btn-minimal{
+	@include cv-btn-styles($btn-default-border, $btn-default-color);
+	background: transparent none;
+
+	@extend %cv-btn-color-presets;
+}
+
+// Size
+button{
+	@extend %cv-btn-default-size;
 }
