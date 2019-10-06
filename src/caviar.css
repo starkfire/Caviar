@@ -67,6 +67,9 @@ p {
 .cv-header.left-aligned {
   text-align: left; }
 
+.cv-header.centered {
+  text-align: center; }
+
 .cv-container {
   position: relative;
   display: block;
@@ -208,7 +211,7 @@ h6.cv-header {
 .cv-avatar.large {
   width: 20vw; }
 
-button, button.small {
+button.cv-btn.small, button {
   padding-top: 0.4em;
   padding-right: 1.4em;
   padding-bottom: 0.4em;
@@ -415,7 +418,7 @@ button.dark.cv-btn-minimal {
 
 button.cv-btn {
   cursor: pointer;
-  margin: 0em 0.25em 0em 0em;
+  margin: 0em 0.25em 0.3em 0em;
   position: relative;
   display: inline-block;
   min-height: 1em;
@@ -449,14 +452,59 @@ button.cv-btn {
       -webkit-border-radius: 0.28rem;
       -moz-border-radius: 0.28rem;
       transition-duration: 0.5s; }
+  button.cv-btn.header {
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
   button.cv-btn:hover {
     border-color: #c2c2c2;
     background-color: #c2c2c2;
     transition-duration: 0.5s; }
+  button.cv-btn.tiny {
+    padding-top: 0.3em;
+    padding-right: 1.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1.3em;
+    font-size: 12px; }
+    button.cv-btn.tiny.expanding:hover {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      padding-right: 1.5em;
+      padding-left: 1.5em;
+      transition-duration: 0.5s; }
+  button.cv-btn.small.expanding:hover {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    padding-right: 1.6em;
+    padding-left: 1.6em;
+    transition-duration: 0.5s; }
+  button.cv-btn.big {
+    padding-top: 0.45em;
+    padding-right: 1.45em;
+    padding-bottom: 0.45em;
+    padding-left: 1.45em;
+    font-size: 24px; }
+    button.cv-btn.big.expanding:hover {
+      padding-top: 0.65em;
+      padding-bottom: 0.65em;
+      padding-right: 1.65em;
+      padding-left: 1.65em;
+      transition-duration: 0.5s; }
+  button.cv-btn.large {
+    padding-top: 0.6em;
+    padding-right: 1.6em;
+    padding-bottom: 0.6em;
+    padding-left: 1.6em;
+    font-size: 28px; }
+    button.cv-btn.large.expanding:hover {
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      padding-right: 1.8em;
+      padding-left: 1.8em;
+      transition-duration: 0.5s; }
 
 button.cv-btn-autofill {
   cursor: pointer;
-  margin: 0em 0.25em 0em 0em;
+  margin: 0em 0.25em 0.3em 0em;
   position: relative;
   display: inline-block;
   min-height: 1em;
@@ -491,10 +539,13 @@ button.cv-btn-autofill {
       -webkit-border-radius: 0.28rem;
       -moz-border-radius: 0.28rem;
       transition-duration: 0.5s; }
+  button.cv-btn-autofill.header {
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
 
 button.cv-btn-minimal {
   cursor: pointer;
-  margin: 0em 0.25em 0em 0em;
+  margin: 0em 0.25em 0.3em 0em;
   position: relative;
   display: inline-block;
   min-height: 1em;
@@ -529,49 +580,6 @@ button.cv-btn-minimal {
       -webkit-border-radius: 0.28rem;
       -moz-border-radius: 0.28rem;
       transition-duration: 0.5s; }
-
-button.tiny {
-  padding-top: 0.3em;
-  padding-right: 1.3em;
-  padding-bottom: 0.3em;
-  padding-left: 1.3em;
-  font-size: 12px; }
-  button.tiny.expanding:hover {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-right: 1.5em;
-    padding-left: 1.5em;
-    transition-duration: 0.5s; }
-
-button.small.expanding:hover {
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
-  padding-right: 1.6em;
-  padding-left: 1.6em;
-  transition-duration: 0.5s; }
-
-button.big {
-  padding-top: 0.45em;
-  padding-right: 1.45em;
-  padding-bottom: 0.45em;
-  padding-left: 1.45em;
-  font-size: 24px; }
-  button.big.expanding:hover {
-    padding-top: 0.65em;
-    padding-bottom: 0.65em;
-    padding-right: 1.65em;
-    padding-left: 1.65em;
-    transition-duration: 0.5s; }
-
-button.large {
-  padding-top: 0.6em;
-  padding-right: 1.6em;
-  padding-bottom: 0.6em;
-  padding-left: 1.6em;
-  font-size: 28px; }
-  button.large.expanding:hover {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-right: 1.8em;
-    padding-left: 1.8em;
-    transition-duration: 0.5s; }
+  button.cv-btn-minimal.header {
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
