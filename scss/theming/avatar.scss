@@ -6,6 +6,8 @@
 }
 
 .cv-avatar{
+	display: inline-block;
+
 	// Type
 	&.rounded{ 
 		border-radius: $cv-avatar-rounded-border-radius;
