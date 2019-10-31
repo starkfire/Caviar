@@ -226,17 +226,19 @@ button.red.cv-btn {
     background-color: #c72631;
     transition-duration: 0.5s; }
 
-button.red.cv-btn-autofill {
-  border-color: #d93843; }
-  button.red.cv-btn-autofill:hover {
+button.red.cv-btn.autofill {
+  border-color: #d93843;
+  color: #404040; }
+  button.red.cv-btn.autofill:hover {
     color: white;
     background-color: #d93843;
     transition-duration: 0.5s; }
 
-button.red.cv-btn-minimal {
+button.red.cv-btn.minimal {
   border-color: #d93843; }
-  button.red.cv-btn-minimal:hover {
+  button.red.cv-btn.minimal:hover {
     border-color: #b2222c;
+    color: #000000;
     transition-duration: 0.5s; }
 
 button.green.cv-btn {
@@ -248,17 +250,19 @@ button.green.cv-btn {
     background-color: #5ab573;
     transition-duration: 0.5s; }
 
-button.green.cv-btn-autofill {
-  border-color: #73c088; }
-  button.green.cv-btn-autofill:hover {
+button.green.cv-btn.autofill {
+  border-color: #73c088;
+  color: #404040; }
+  button.green.cv-btn.autofill:hover {
     color: white;
     background-color: #73c088;
     transition-duration: 0.5s; }
 
-button.green.cv-btn-minimal {
+button.green.cv-btn.minimal {
   border-color: #73c088; }
-  button.green.cv-btn-minimal:hover {
+  button.green.cv-btn.minimal:hover {
     border-color: #4caa66;
+    color: #000000;
     transition-duration: 0.5s; }
 
 button.blue.cv-btn {
@@ -270,17 +274,19 @@ button.blue.cv-btn {
     background-color: #3ab5c2;
     transition-duration: 0.5s; }
 
-button.blue.cv-btn-autofill {
-  border-color: #54c0cc; }
-  button.blue.cv-btn-autofill:hover {
+button.blue.cv-btn.autofill {
+  border-color: #54c0cc;
+  color: #404040; }
+  button.blue.cv-btn.autofill:hover {
     color: white;
     background-color: #54c0cc;
     transition-duration: 0.5s; }
 
-button.blue.cv-btn-minimal {
+button.blue.cv-btn.minimal {
   border-color: #54c0cc; }
-  button.blue.cv-btn-minimal:hover {
+  button.blue.cv-btn.minimal:hover {
     border-color: #34a2af;
+    color: #000000;
     transition-duration: 0.5s; }
 
 button.teal.cv-btn {
@@ -292,17 +298,19 @@ button.teal.cv-btn {
     background-color: #28a798;
     transition-duration: 0.5s; }
 
-button.teal.cv-btn-autofill {
-  border-color: #2fc4b2; }
-  button.teal.cv-btn-autofill:hover {
+button.teal.cv-btn.autofill {
+  border-color: #2fc4b2;
+  color: #404040; }
+  button.teal.cv-btn.autofill:hover {
     color: white;
     background-color: #2fc4b2;
     transition-duration: 0.5s; }
 
-button.teal.cv-btn-minimal {
+button.teal.cv-btn.minimal {
   border-color: #2fc4b2; }
-  button.teal.cv-btn-minimal:hover {
+  button.teal.cv-btn.minimal:hover {
     border-color: #239385;
+    color: #000000;
     transition-duration: 0.5s; }
 
 button.orange.cv-btn {
@@ -314,17 +322,19 @@ button.orange.cv-btn {
     background-color: #fe5911;
     transition-duration: 0.5s; }
 
-button.orange.cv-btn-autofill {
-  border-color: #fe7235; }
-  button.orange.cv-btn-autofill:hover {
+button.orange.cv-btn.autofill {
+  border-color: #fe7235;
+  color: #404040; }
+  button.orange.cv-btn.autofill:hover {
     color: white;
     background-color: #fe7235;
     transition-duration: 0.5s; }
 
-button.orange.cv-btn-minimal {
+button.orange.cv-btn.minimal {
   border-color: #fe7235; }
-  button.orange.cv-btn-minimal:hover {
+  button.orange.cv-btn.minimal:hover {
     border-color: #f54b01;
+    color: #000000;
     transition-duration: 0.5s; }
 
 button.yellow.cv-btn {
@@ -336,17 +346,19 @@ button.yellow.cv-btn {
     background-color: #ffb919;
     transition-duration: 0.5s; }
 
-button.yellow.cv-btn-autofill {
-  border-color: #ffc43d; }
-  button.yellow.cv-btn-autofill:hover {
+button.yellow.cv-btn.autofill {
+  border-color: #ffc43d;
+  color: #404040; }
+  button.yellow.cv-btn.autofill:hover {
     color: white;
     background-color: #ffc43d;
     transition-duration: 0.5s; }
 
-button.yellow.cv-btn-minimal {
+button.yellow.cv-btn.minimal {
   border-color: #ffc43d; }
-  button.yellow.cv-btn-minimal:hover {
+  button.yellow.cv-btn.minimal:hover {
     border-color: #ffb100;
+    color: #000000;
     transition-duration: 0.5s; }
 
 button.brown.cv-btn {
@@ -358,17 +370,19 @@ button.brown.cv-btn {
     background-color: #bb935e;
     transition-duration: 0.5s; }
 
-button.brown.cv-btn-autofill {
-  border-color: #c6a477; }
-  button.brown.cv-btn-autofill:hover {
+button.brown.cv-btn.autofill {
+  border-color: #c6a477;
+  color: #404040; }
+  button.brown.cv-btn.autofill:hover {
     color: white;
     background-color: #c6a477;
     transition-duration: 0.5s; }
 
-button.brown.cv-btn-minimal {
+button.brown.cv-btn.minimal {
   border-color: #c6a477; }
-  button.brown.cv-btn-minimal:hover {
+  button.brown.cv-btn.minimal:hover {
     border-color: #b4874c;
+    color: #000000;
     transition-duration: 0.5s; }
 
 button.purple.cv-btn {
@@ -380,17 +394,19 @@ button.purple.cv-btn {
     background-color: #f439dd;
     transition-duration: 0.5s; }
 
-button.purple.cv-btn-autofill {
-  border-color: #f65be3; }
-  button.purple.cv-btn-autofill:hover {
+button.purple.cv-btn.autofill {
+  border-color: #f65be3;
+  color: #404040; }
+  button.purple.cv-btn.autofill:hover {
     color: white;
     background-color: #f65be3;
     transition-duration: 0.5s; }
 
-button.purple.cv-btn-minimal {
+button.purple.cv-btn.minimal {
   border-color: #f65be3; }
-  button.purple.cv-btn-minimal:hover {
+  button.purple.cv-btn.minimal:hover {
     border-color: #f321d9;
+    color: #000000;
     transition-duration: 0.5s; }
 
 button.dark.cv-btn {
@@ -402,17 +418,19 @@ button.dark.cv-btn {
     background-color: #434343;
     transition-duration: 0.5s; }
 
-button.dark.cv-btn-autofill {
-  border-color: #555555; }
-  button.dark.cv-btn-autofill:hover {
+button.dark.cv-btn.autofill {
+  border-color: #555555;
+  color: #404040; }
+  button.dark.cv-btn.autofill:hover {
     color: white;
     background-color: #555555;
     transition-duration: 0.5s; }
 
-button.dark.cv-btn-minimal {
+button.dark.cv-btn.minimal {
   border-color: #555555; }
-  button.dark.cv-btn-minimal:hover {
+  button.dark.cv-btn.minimal:hover {
     border-color: #363636;
+    color: #000000;
     transition-duration: 0.5s; }
 
 button.cv-btn {
@@ -421,6 +439,7 @@ button.cv-btn {
   position: relative;
   display: inline-block;
   min-height: 1em;
+  color: #404040;
   text-align: center;
   text-transform: none;
   text-decoration: none;
@@ -451,9 +470,6 @@ button.cv-btn {
       -webkit-border-radius: 0.28rem;
       -moz-border-radius: 0.28rem;
       transition-duration: 0.5s; }
-  button.cv-btn.header {
-    text-transform: uppercase;
-    letter-spacing: 0.1em; }
   button.cv-btn:hover {
     border-color: #c2c2c2;
     background-color: #c2c2c2;
@@ -501,12 +517,13 @@ button.cv-btn {
       padding-left: 1.8em;
       transition-duration: 0.5s; }
 
-button.cv-btn-autofill {
+button.cv-btn.autofill {
   cursor: pointer;
   margin: 0em 0.25em 0.3em 0em;
   position: relative;
   display: inline-block;
   min-height: 1em;
+  color: #404040;
   text-align: center;
   text-transform: none;
   text-decoration: none;
@@ -517,37 +534,35 @@ button.cv-btn-autofill {
   border: 2px solid #dbdbdb;
   border-radius: 0.28rem;
   background: transparent none; }
-  button.cv-btn-autofill:last-child {
+  button.cv-btn.autofill:last-child {
     margin-right: 0em; }
-  button.cv-btn-autofill:focus {
+  button.cv-btn.autofill:focus {
     outline: none !important; }
-  button.cv-btn-autofill.transform:hover {
+  button.cv-btn.autofill.transform:hover {
     border-radius: 25px;
     -ms-border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     transition-duration: 0.5s; }
-  button.cv-btn-autofill.curved {
+  button.cv-btn.autofill.curved {
     border-radius: 25px;
     -ms-border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px; }
-    button.cv-btn-autofill.curved.transform:hover {
+    button.cv-btn.autofill.curved.transform:hover {
       border-radius: 0.28rem;
       -ms-border-radius: 0.28rem;
       -webkit-border-radius: 0.28rem;
       -moz-border-radius: 0.28rem;
       transition-duration: 0.5s; }
-  button.cv-btn-autofill.header {
-    text-transform: uppercase;
-    letter-spacing: 0.1em; }
 
-button.cv-btn-minimal {
+button.cv-btn.minimal {
   cursor: pointer;
   margin: 0em 0.25em 0.3em 0em;
   position: relative;
   display: inline-block;
   min-height: 1em;
+  color: #404040;
   text-align: center;
   text-transform: none;
   text-decoration: none;
@@ -557,28 +572,25 @@ button.cv-btn-minimal {
   letter-spacing: 0.045em;
   border: 2px solid #dbdbdb;
   border-radius: 0.28rem;
-  background: transparent none; }
-  button.cv-btn-minimal:last-child {
+  background: transparent none !important; }
+  button.cv-btn.minimal:last-child {
     margin-right: 0em; }
-  button.cv-btn-minimal:focus {
+  button.cv-btn.minimal:focus {
     outline: none !important; }
-  button.cv-btn-minimal.transform:hover {
+  button.cv-btn.minimal.transform:hover {
     border-radius: 25px;
     -ms-border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     transition-duration: 0.5s; }
-  button.cv-btn-minimal.curved {
+  button.cv-btn.minimal.curved {
     border-radius: 25px;
     -ms-border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px; }
-    button.cv-btn-minimal.curved.transform:hover {
+    button.cv-btn.minimal.curved.transform:hover {
       border-radius: 0.28rem;
       -ms-border-radius: 0.28rem;
       -webkit-border-radius: 0.28rem;
       -moz-border-radius: 0.28rem;
       transition-duration: 0.5s; }
-  button.cv-btn-minimal.header {
-    text-transform: uppercase;
-    letter-spacing: 0.1em; }
