@@ -13,7 +13,7 @@
 }
 
 // Main Styles
-@mixin cv-btn-styles($btn-border, $default-color){
+@mixin cv-btn-styles($btn-border, $default-color, $is-thin: false){
 	cursor: pointer;
 	margin: 0em $btn-default-rm 0.3em 0em;
 	position: relative;
@@ -27,7 +27,11 @@
 	font-weight: normal;
 	text-shadow: none;
 	letter-spacing: 0.045em;
-	border: $btn-border solid $default-color;
+	@if $is-thin{
+		border: $btn-default-border-thin solid $default-color;
+	}@else{
+		border: $btn-border solid $default-color;
+	}
 	border-radius: 0.28rem;
 
 	&:last-child{
@@ -72,6 +76,7 @@
 	}
 
 	&.cv-btn.autofill{
+		&.thin{ border-color: $picked-color; }
 		border-color: $picked-color;
 		color: #404040;
 		&:hover{
@@ -82,6 +87,7 @@
 	}
 
 	&.cv-btn.minimal{
+		&.thin{ border-color: $picked-color; }
 		border-color: $picked-color;
 		&:hover{
 			$minimal-darken: darken($picked-color, 12%);
@@ -177,12 +183,20 @@ button.cv-btn.autofill{
 	@include cv-btn-styles($btn-default-border, $btn-default-color);
 	background: transparent none;
 
+	&.thin{
+		@include cv-btn-styles($btn-default-border, $btn-default-color, $is-thin: true);
+	}
+
 	@extend %cv-btn-color-presets;
 }
 
 button.cv-btn.minimal{
 	@include cv-btn-styles($btn-default-border, $btn-default-color);
 	background: transparent none !important;
+
+	&.thin{
+		@include cv-btn-styles($btn-default-border, $btn-default-color, $is-thin: true);
+	}
 
 	@extend %cv-btn-color-presets;
 }
