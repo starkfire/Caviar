@@ -16,6 +16,8 @@
 				@include corner-tweaks($cv-avatar-circular-border-radius);
 				transition-duration: $default-avatar-transition-rate;
 			}
+			@include corner-tweaks($cv-avatar-rounded-border-radius);
+			transition-duration: $default-avatar-transition-rate;
 		}
 	}
 	&.circular{ 
@@ -25,6 +27,8 @@
 				@include corner-tweaks($cv-avatar-rounded-border-radius);
 				transition-duration: $default-avatar-transition-rate;
 			}
+			@include corner-tweaks($cv-avatar-circular-border-radius);
+			transition-duration: $default-avatar-transition-rate;
 		}
 	}
 	// Size
