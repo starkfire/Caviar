@@ -1,7 +1,28 @@
+@mixin cv-badge-color($picked-color){
+	&.cv-badge{
+		background-color: $picked-color;
+		color: white;
+	}
+}
+
+%cv-badge-color-presets{
+	&.red{ @include cv-badge-color($red-main); }
+	&.green{ @include cv-badge-color($green-main); }
+	&.blue{ @include cv-badge-color($blue-main); }
+	&.teal{ @include cv-badge-color($teal-main); }
+	&.orange{ @include cv-badge-color($orange-main); }
+	&.yellow{ @include cv-badge-color($yellow-main); }
+	&.brown{ @include cv-badge-color($brown-main); }
+	&.purple{ @include cv-badge-color($purple-main); }
+	&.dark{ @include cv-badge-color($dark-main); }
+}
+
 .cv-badge{
 	border-radius: 50%;
 	background-color: $badge-default-color;
 	padding: $badge-y-padding $badge-x-padding;
 	vertical-align: middle;
 	box-sizing: border-box;
+
+	@extend %cv-badge-color-presets;
 }
