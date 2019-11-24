@@ -47,6 +47,8 @@
 			@include corner-tweaks(25px);
 			transition-duration: $default-btn-transition-rate;
 		}
+		@include corner-tweaks(0.28rem);
+		transition-duration: $default-btn-transition-rate;
 	}
 
 	&.curved{
