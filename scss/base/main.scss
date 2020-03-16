@@ -70,3 +70,17 @@ p{
 		left: $left;
 	}
 }
+
+@mixin setVerticalMargin ($top, $bottom) {
+	margin: {
+		top: $top;
+		bottom: $bottom;
+	}
+}
+
+@mixin setHorizontalMargin ($right, $left) {
+	margin: {
+		right: $right;
+		left: $left;
+	}
+}
