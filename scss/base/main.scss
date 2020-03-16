@@ -54,3 +54,19 @@ p{
 		text-align: center;
 	}
 }
+
+// Mixins
+
+@mixin setVerticalPadding ($top, $bottom) {
+	padding: {
+		top: $top;
+		bottom: $bottom;
+	}
+}
+
+@mixin setHorizontalPadding ($right, $left) {
+	padding: {
+		right: $right;
+		left: $left;
+	}
+}
