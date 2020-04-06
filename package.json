@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/starkfire/Caviar#readme",
   "devDependencies": {
-    "backstopjs": "^4.3.2",
+    "backstopjs": "^4.4.2",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-rename": "^1.4.0",
@@ -29,5 +29,8 @@
     "gulp4-run-sequence": "^0.4.0",
     "include-media": "^1.4.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "kind-of": "^6.0.3",
+    "minimist": "^1.2.5"
+  }
 }
